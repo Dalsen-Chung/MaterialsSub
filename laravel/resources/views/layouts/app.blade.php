@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}"> {{-- CSRF Token 验证用户与发起请求者是否为同一用户 --}}
-    <title>Materials</title>
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <title>{{ config('system.appName') }}</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <style type="text/css">
         .navbar-brand{
             padding: 0;
@@ -24,11 +24,57 @@
         .navbar-header{
             min-height:60px;
         }
-        .navbar-nav>li>a{
+        .navbar-inverse .navbar-nav>li>a{
             padding-top: 20px;
+            line-height: 25px;
+            color: #f3eded;
+
         }
         .navbar-nav>li>.dropdown-menu{
-            margin-top: 5px;
+            margin-top: 1px;
+        }
+        .jumbotron a{
+            padding: 10px 50px !important;
+        }
+        .navbar-inverse {
+            background-color: #093b65;
+            border-color: #093b65;
+        }
+        #footer{
+            width: 100%;
+            height: 200px;
+            background-color: #EEEEEE;
+        }
+        #footer .content{
+            padding-top: 25px !important;
+        }
+        #footer .content>div>div{
+            color: #636B6F;
+            margin-bottom: 20px;
+        }
+        .main{
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .technology {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /*.technology::after{*/
+            /*content: " ";*/
+            /*display: block;*/
+            /*height: 0;*/
+            /*clear: both;*/
+        /*}*/
+        .technology div{
+            position: relative;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            float: left;
+            width: 25%;
+            height: 500px;
+            text-align: center;
         }
     </style>
     @yield('styles')
@@ -36,6 +82,7 @@
 <body>
     <div id="app">
         @include('particals.navbar')
+        @include('particals.jumbotron')
         <div class="main">
             @yield('content')
         </div>
