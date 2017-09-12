@@ -4,14 +4,14 @@
     <div class="container">
         <h3 class="text-center"><span class="glyphicon glyphicon-book"></span> 高校教材征订系统</h3>
         <div id="login">
-            <form>
+            <form action="dologin" method="post">
                 <div class="form-group">
                     <label for="account"><span class="glyphicon glyphicon-user"></span>账号</label>
-                    <input type="email" class="form-control" id="account" placeholder="学号/教工号">
+                    <input type="email" class="form-control" id="account" name="account" placeholder="学号/教工号">
                 </div>
                 <div class="form-group">
                     <label for="password"><span class="glyphicon glyphicon-lock"></span>密码</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="password"><span class="glyphicon glyphicon-exclamation-sign"></span>验证码</label>
@@ -39,6 +39,9 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block center-block">登录</button>
+                <div class="error" style="display: none">
+                    <p class="text-danger">123</p>
+                </div>
             </form>
         </div>
     </div>

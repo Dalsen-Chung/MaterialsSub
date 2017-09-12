@@ -16,10 +16,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login', function () {
-//    return view('welcome');
-    return view('login');
-});
+Route::get('/login','LoginController@login');
 
 Route::get('/captcha/{tmp}', 'KitController@captcha');
 

@@ -111,6 +111,10 @@
             display: block;
             margin: 10px auto;
         }
+        .error{
+            margin-top: 10px;
+            text-align: center;
+        }
         @media  only screen and (max-width: 1024px){
             #login{
                 width: 80%;
