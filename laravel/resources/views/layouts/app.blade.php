@@ -6,6 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}"> {{-- CSRF Token 验证用户与发起请求者是否为同一用户 --}}
+    <link rel="shortcut icon" href="{{ config('system.default_icon') }}">
     <title>{{ config('system.appName') }}</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <style type="text/css">
@@ -68,15 +69,6 @@
             width: 100%;
             margin: 20px auto 50px;
         }
-        .technology>div{
-            position: relative;
-            padding-left: 1.25rem;
-            padding-right: 1.25rem;
-            float: left;
-            width: 25%;
-            text-align: center;
-            margin-top: 30px;
-        }
         .Itemtext{
             width: 100%;
             word-wrap: break-word;
@@ -89,31 +81,10 @@
             padding: 20px 20px 10px 20px;
             font-size: 14px;
         }
-        .Itemtext button{
-            margin-top: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            transition: background-color 300ms ease-out;
-        }
         .technology div img{
             border-radius: 30px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
             transition: box-shadow 300ms ease-out;
-        }
-        .btn-laravel:hover{
-            background-color: #FB503B;
-            color: #FFFFFF;
-        }
-        .btn-vue:hover{
-            background-color: #69B382;
-            color: #FFFFFF;
-        }
-        .btn-boot:hover{
-            background-color: #563E7C;
-            color: #FFFFFF;
-        }
-        .btn-mysql:hover{
-            background-color: #5287A4;
-            color: #FFFFFF;
         }
         #sysIntroduce{
             /*height: 900px;*/
@@ -142,6 +113,31 @@
                 padding: 20px;
                 margin: 30px auto;
             }
+            .technology>div{
+                text-align: center;
+                margin-bottom: 6vh;
+                padding: 2vh;
+            }
+            .Itemtext button{
+                margin-top: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+            .btn-laravel{
+                background-color: #FB503B;
+                color: #FFFFFF;
+            }
+            .btn-vue{
+                background-color: #69B382;
+                color: #FFFFFF;
+            }
+            .btn-boot{
+                background-color: #563E7C;
+                color: #FFFFFF;
+            }
+            .btn-mysql{
+                background-color: #5287A4;
+                color: #FFFFFF;
+            }
         }
         @media  only screen and (min-width: 1025px){
             #login{
@@ -155,6 +151,36 @@
             }
             .radio-group{
                 text-align: center;
+            }
+            .technology>div{
+                position: relative;
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+                float: left;
+                width: 25%;
+                text-align: center;
+                margin-top: 30px;
+            }
+            .Itemtext button{
+                margin-top: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+                transition: background-color 300ms ease-out;
+            }
+            .btn-laravel:hover{
+                background-color: #FB503B;
+                color: #FFFFFF;
+            }
+            .btn-vue:hover{
+                background-color: #69B382;
+                color: #FFFFFF;
+            }
+            .btn-boot:hover{
+                background-color: #563E7C;
+                color: #FFFFFF;
+            }
+            .btn-mysql:hover{
+                background-color: #5287A4;
+                color: #FFFFFF;
             }
         }
     </style>

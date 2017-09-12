@@ -8,6 +8,7 @@
 
 return [
     'appName' => '高校教材征订系统',
+    'default_icon' => 'images/favicon.ico',
     'author' => 'Develop By Dalsen',
     'address' => '广东省广州市从化温泉镇',
     'school' => '中山大学南方学院',

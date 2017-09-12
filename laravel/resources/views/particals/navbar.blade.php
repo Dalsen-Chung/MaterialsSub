@@ -14,7 +14,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-                <li><a href="/login">用户登录</a></li>
+                <li><a href="{{ url('/login') }}">用户登录</a></li>
             </ul>
         </div>
     </div><!-- /.container-fluid -->
