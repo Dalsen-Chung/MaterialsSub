@@ -14,16 +14,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户登录<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">学生登录</a></li>
-                        <li><a href="#">教师登录</a></li>
-                        <li><a href="#">教务登录</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">管理员登录</a></li>
-                    </ul>
-                </li>
+                <li><a href="/login">用户登录</a></li>
             </ul>
         </div>
     </div><!-- /.container-fluid -->
