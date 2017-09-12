@@ -107,6 +107,10 @@
             box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
             background-color: #EEEEEE;
         }
+        #cap{
+            display: block;
+            margin: 10px auto;
+        }
         @media  only screen and (max-width: 1024px){
             #login{
                 width: 80%;

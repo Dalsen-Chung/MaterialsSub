@@ -15,7 +15,8 @@
                 </div>
                 <div class="form-group">
                     <label for="password"><span class="glyphicon glyphicon-exclamation-sign"></span>验证码</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="captcha">
+                    <img src="{{ url('/captcha/1') }}" alt="" onclick="javascript:re_captcha();" id="cap">
                 </div>
                 <div class="form-group radio-group">
                     <div class="radio">
@@ -41,4 +42,14 @@
             </form>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+<script>
+    function re_captcha() {
+        $url = "{{ url('/captcha/') }}";
+        $url = $url + "/" + Math.random();
+        document.getElementById('cap').src=$url;
+    }
+</script>
 @endsection

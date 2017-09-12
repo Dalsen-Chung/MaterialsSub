@@ -21,3 +21,5 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/captcha/{tmp}', 'KitController@captcha');
+
