@@ -7,13 +7,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#" draggable="false">
+            <a class="navbar-brand" href="{{ config('system.schoolLink') }}" target="view_window" draggable="false">
                 <img src="{{ asset('images/logo.png') }}" class="logo" alt="" draggable="false">
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
+                <li><a href="{{ url('/') }}">系统文档</a></li>
                 <li><a href="{{ url('/login') }}">用户登录</a></li>
             </ul>
         </div>
