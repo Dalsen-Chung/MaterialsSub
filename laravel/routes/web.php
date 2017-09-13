@@ -20,3 +20,5 @@ Route::get('/login','LoginController@login');
 
 Route::get('/captcha/{tmp}', 'KitController@captcha');
 
+Route::get('/sys/home', 'HomeController@toHome');
+
