@@ -9,6 +9,8 @@ namespace App\Http\Controllers;
 
 use Gregwar\Captcha\CaptchaBuilder;
 
+use Illuminate\Support\Facades\Session;
+
 class KitController extends Controller
 {
     public function captcha($temp){
@@ -18,7 +20,7 @@ class KitController extends Controller
         $phrase = $builder->getPhrase();
 
         //将内容存入Session
-        session('myCaptcha',$phrase);
+        Session::put('captcha',$phrase);
         header("Cache-Control: no-cache, must-revalidate");
         header('Content-Type: image/jpeg');
         $builder->output();

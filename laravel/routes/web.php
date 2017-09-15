@@ -12,13 +12,17 @@
 */
 
 Route::get('/', function () {
-//    return view('welcome');
     return view('home');
 });
 
-Route::get('/login','LoginController@login');
+Route::group(['middleware' => ['web']], function () {
 
-Route::get('/captcha/{tmp}', 'KitController@captcha');
+    Route::any('/login','LoginController@login');
 
-Route::get('/sys/home', 'HomeController@toHome');
+    Route::any('/captcha/{tmp}', 'KitController@captcha');
 
+    Route::any('/sys/home', 'HomeController@toHome');
+
+    Route::post('/dologin', 'LoginController@dologin');
+
+});

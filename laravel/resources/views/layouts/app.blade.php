@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}"> {{-- CSRF Token 验证用户与发起请求者是否为同一用户 --}}
     <link rel="shortcut icon" href="{{ config('system.default_icon') }}">
@@ -147,7 +146,7 @@
                 color: #FFFFFF;
             }
         }
-        @media  only screen and (min-width: 1025px){
+        @media  only screen and (min-width: 1024px){
             #login{
                 width: 50%;
                 padding: 50px;
