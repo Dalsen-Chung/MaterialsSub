@@ -48,6 +48,13 @@
                         @endforeach
                     </div>
                 @endif
+
+                @if(count($loginErr)>0)
+                    <div class="error">
+                        <p class="text-danger">{{$loginErr}}</p>
+                    </div>
+                @endif
+
             </form>
         </div>
     </div>

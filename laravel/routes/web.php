@@ -25,4 +25,6 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::post('/dologin', 'LoginController@dologin');
 
+    Route::any('/add','LoginController@add');
+
 });
