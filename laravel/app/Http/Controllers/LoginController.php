@@ -53,8 +53,9 @@ class LoginController extends Controller
                 if($arr != null){
                     $SysPass = $arr->StuPassword;
                     if ($pass == $SysPass){
-                            Session::put('username',$arr->StuName.',同学欢迎您');
-                        return view('System.home');
+                        Session::put('username',$arr->StuName.',同学欢迎您');
+                        Session::put('sys_url','/sys/home/student');
+                        return \redirect('/sys/home/student');
                     }else{
                         return view('login',['loginErr'=>'密码错误']);
                     }
@@ -69,7 +70,8 @@ class LoginController extends Controller
                     $SysPass = $arr->TeaPassword;
                     if ($pass == $SysPass){
                         Session::put('username',$arr->TeaName.',老师欢迎您');
-                        return view('System.home');
+                        Session::put('sys_url','/sys/home/teacher');
+                        return \redirect('/sys/home/teacher');
                     }else{
                         return view('login',['loginErr'=>'密码错误']);
                     }
@@ -83,8 +85,9 @@ class LoginController extends Controller
                 if($arr != null){
                     $SysPass = $arr->EduMPassword;
                     if ($pass == $SysPass){
-                        Session::put('username',$arr->EduMName.'老师欢迎您');
-                        return view('System.home');
+                        Session::put('username',$arr->EduMName.',老师欢迎您');
+                        Session::put('sys_url','/sys/home/dean');
+                        return \redirect('/sys/home/dean');
                     }else{
                         return view('login',['loginErr'=>'密码错误']);
                     }
@@ -97,10 +100,14 @@ class LoginController extends Controller
     }
 
     public function add(){
-        $student = new Student();
-        $data = $student::all();
-        foreach ($data as $stu){
-            echo $stu->StuName;
-        }
+        $tea = new Dean();
+        $tea->EduMName = '李教务';
+        $tea->EduMAccount = 'jiaowu';
+        $tea->EduMPassword = '123';
+        $tea->EduMDepartment = '电气与计算机工程学院';
+        $tea->EduMPosition = '博士';
+        $tea->EduMPhone = '15622183612';
+        $tea->EduMEmail = '504471282@qq.com';
+        $tea->save();
     }
 }

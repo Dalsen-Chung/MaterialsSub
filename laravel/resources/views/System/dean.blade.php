@@ -68,11 +68,12 @@
     }
 </style>
 <body>
-    <div id="app">
-        @include('particals.navbar')
-        <example></example>
-        @include('particals.footer')
-    </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+<div id="app">
+    @include('particals.navbar')
+    {{--<example></example>--}}
+    <Dean></Dean>
+    @include('particals.footer')
+</div>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

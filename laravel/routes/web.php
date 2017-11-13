@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('homePage');
 
 Route::group(['middleware' => ['web']], function () {
 
@@ -21,10 +21,12 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::any('/captcha/{tmp}', 'KitController@captcha');
 
-    Route::any('/sys/home', 'HomeController@toHome');
+    Route::any('/sys/home/{role}', 'HomeController@toHome');
 
     Route::post('/dologin', 'LoginController@dologin');
 
     Route::any('/add','LoginController@add');
+
+    Route::any('/logout','LogoutController@logout');
 
 });

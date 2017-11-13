@@ -16,8 +16,8 @@
             <ul class="nav navbar-nav navbar-right" style="text-align: center;">
                 <li><a href="{{ url('/') }}">系统文档</a></li>
                 @if(Session::get('username'))
-                    <li><a href="#">{{ Session::get('username') }}</a></li>
-                    <li><a href="#">退出登录</a></li>
+                    <li><a href="{{ url('').Session::get('sys_url') }}">{{ Session::get('username') }}</a></li>
+                    <li><a href="{{ url('/logout') }}">退出登录</a></li>
                 @else
                     <li><a href="{{ url('/login') }}">用户登录</a></li>
                 @endif

@@ -23,7 +23,9 @@ import routes from './route';
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('Teacher', require('./components/Teacher.vue'));
+Vue.component('Student', require('./components/Student.vue'));
+Vue.component('Dean', require('./components/Dean.vue'));
 
 const router = new VueRouter({
     routes
