@@ -70,8 +70,7 @@
 <body>
 <div id="app">
     @include('particals.navbar')
-    {{--<example></example>--}}
-    student
+    <input type="hidden" id="acc" value="{{ Session::get('useracc') }}" />
     <Student></Student>
     @include('particals.footer')
 </div>

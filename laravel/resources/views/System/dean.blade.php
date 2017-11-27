@@ -70,7 +70,6 @@
 <body>
 <div id="app">
     @include('particals.navbar')
-    {{--<example></example>--}}
     <Dean></Dean>
     @include('particals.footer')
 </div>
