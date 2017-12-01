@@ -47296,7 +47296,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, "\n.content-top[data-v-daefbbde]{\n    padding: 0;\n    margin-top: 30px;\n    padding-bottom: 250px;\n}\n.page-header[data-v-daefbbde]{\n    margin-top: 15px;\n}\n.page-header>h3[data-v-daefbbde]{\n    margin-top: 0;\n}\n.content-plane[data-v-daefbbde]{\n    border: 1px solid #D3E0E9;\n    /*padding: 0 20px;*/\n    padding-bottom: 30px;\n    /*height: 1200px;*/\n    border-radius: 5px;\n}\n.booklist[data-v-daefbbde]{\n    margin: 30px auto 20px;\n}\n.label-primary[data-v-daefbbde]{\n    display: inline-block;\n    margin-bottom: 10px;\n}\nth[data-v-daefbbde]{\n    font-weight:normal;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color:#34495E;\n    line-height: 2.6 !important;\n}\n.select-content[data-v-daefbbde]{\n    margin-bottom: 20px;\n}\n\n/*\n    网选教材CSS\n*/\n.netbooklists[data-v-daefbbde]{\n    margin-top: 40px;\n}\n.netbooklists img[data-v-daefbbde]{\n    width: 105px;\n    height: 145px;\n}\n.netbooklists button[data-v-daefbbde]{\n    margin: 10px auto;\n}\n.netbooklists>div[data-v-daefbbde]{\n    margin-bottom: 20px;\n}\n@media  only screen and (min-width: 1024px) {\n.fillin[data-v-daefbbde]{\n        width: 50%;\n        margin: 0 auto;\n}\n}\n@media  only screen and (max-width: 1024px){\n}\n\n/*\n动画\n */\n.list-item[data-v-daefbbde] {\n    display: inline-block;\n    margin-right: 10px;\n}\n.list-enter-active[data-v-daefbbde], .list-leave-active[data-v-daefbbde] {\n    transition: all 1s;\n}\n.list-enter[data-v-daefbbde], .list-leave-to[data-v-daefbbde]\n    /* .list-leave-active for below version 2.1.8 */ {\n    opacity: 0;\n    transform: translateY(30px);\n}\n", ""]);
+exports.push([module.i, "\n.content-top[data-v-daefbbde]{\n    padding: 0;\n    margin-top: 30px;\n    padding-bottom: 250px;\n}\n.page-header[data-v-daefbbde]{\n    margin-top: 15px;\n}\n.page-header>h3[data-v-daefbbde]{\n    margin-top: 0;\n}\n.content-plane[data-v-daefbbde]{\n    border: 1px solid #D3E0E9;\n    /*padding: 0 20px;*/\n    padding-bottom: 30px;\n    /*height: 1200px;*/\n    border-radius: 5px;\n}\n.booklist[data-v-daefbbde]{\n    margin: 30px auto 20px;\n}\n.label-primary[data-v-daefbbde]{\n    display: inline-block;\n    margin-bottom: 10px;\n}\nth[data-v-daefbbde]{\n    font-weight:normal;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color:#34495E;\n    line-height: 2.6 !important;\n}\n.select-content[data-v-daefbbde]{\n    margin-bottom: 20px;\n}\n\n/*\n    网选教材CSS\n*/\n.netbooklists[data-v-daefbbde]{\n    margin-top: 40px;\n}\n.netbooklists img[data-v-daefbbde]{\n    width: 105px;\n    height: 145px;\n}\n.netbooklists button[data-v-daefbbde]{\n    margin: 10px auto;\n}\n.netbooklists>div[data-v-daefbbde]{\n    margin-bottom: 20px;\n}\n\n/*回到顶部*/\n.toTop[data-v-daefbbde]{\n    position: fixed;\n    right: 25px;\n    bottom: 25px;\n    z-index: 999;\n    text-align: center;\n    font-size: 12px;\n    cursor: pointer;\n}\n.toTop span[data-v-daefbbde]{\n    display: block;\n    /*text-align: center;*/\n}\n.toTop>a[data-v-daefbbde]:hover, a[data-v-daefbbde]:visited, a[data-v-daefbbde]:link, a[data-v-daefbbde]:active{\n    text-decoration: none;\n    outline: none;\n}\n\n\n/*\n    已选教材CSS\n*/\n@media  only screen and (min-width: 1024px) {\n.fillin[data-v-daefbbde]{\n        width: 80%;\n        margin: 0 auto;\n}\n}\n@media  only screen and (max-width: 500px){\n.toTop[data-v-daefbbde]{\n        display: none;\n}\n}\n@media  only screen and (min-width: 1400px){\n.container[data-v-daefbbde] {\n        width: 1350px;\n}\n}\n", ""]);
 
 // exports
 
@@ -47679,45 +47679,308 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
             showBlock: 1,
             searchBook: '',
+            dateArr: [],
+            MajorArr: [],
+            nowYear: '',
+            netBookLists: [],
             netBooks: {
                 books: null,
                 bookListLength: 0,
-                NetlessonName: ''
+                saveMess: {
+                    NetlessonName: '',
+                    Award: '',
+                    ByOwn: '',
+                    WithSun: '',
+                    FromAbroad: '',
+                    ForTea: '',
+                    NetTerm: '',
+                    NetYear: '',
+                    NetMajor: ''
+                },
+                saveTotal: {},
+                prePage: true,
+                nexPage: false,
+                pageNum: 10,
+                pageBooks: 15,
+                nowPage: 1,
+                pageOffset: 0
             },
-            netBookLists: []
+            selfBooks: {
+                LessonName: '',
+                Name: '',
+                Author: '',
+                Publisher: '',
+                PublicDate: '',
+                ISBN13: '',
+                Price: '',
+                AltUrl: '',
+                Award: '',
+                ByOwn: '',
+                WithSun: '',
+                FromAbroad: '',
+                ForTea: '',
+                Image: '',
+                Page: '',
+                Term: '',
+                Year: '',
+                Major: ''
+            },
+            BookRecord: {
+                Major: '',
+                Term: '',
+                Year: ''
+            },
+            AlertMess: '',
+            AlertStyle: '',
+            SelectedBooks: [],
+            RecordData: [],
+            SearchLoading: false,
+            SubmitLoading: false,
+            UploadLoading: false,
+            NetBookLoading: false
         };
     },
 
     watch: {
-        //网选教材搜索框
-        searchBook: function searchBook(val) {
-            var _this = this;
-
+        //网选教材搜索框 debounce函数用于延迟执行
+        searchBook: _.debounce(function (val) {
             if (val === '') {
                 this.netBooks.bookListLength = 0;
             } else {
-                this.$http.jsonp('https://api.douban.com/v2/book/search?q=' + this.searchBook + '&count=12').then(function (response) {
-                    console.log(response.data.books);
-                    _this.netBooks.bookListLength = response.data.books.length;
-                    _this.netBooks.books = response.data.books;
-                }, function (response) {
-                    console.log('fail' + response.data);
-                });
+                this.netBooks.nowPage = 1;
+                this.NetBookLoading = true;
+                this.getBooksByApi();
             }
-        }
+        }, 500)
     },
     methods: {
+        //获取近四年年份
+        getMajors: function getMajors() {
+            var _this2 = this;
+
+            var myDate = new Date();
+            var nowYear = myDate.getFullYear();
+            this.nowYear = nowYear + '年';
+            this.netBooks.saveMess.NetYear = nowYear + '年';
+            this.selfBooks.Year = nowYear + '年';
+            var majors = {};
+            for (var i = 0; i < 4; i++) {
+                this.dateArr.push(nowYear - i);
+            }
+            this.$http.get('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/getmajor').then(function (response) {
+                majors = response.data;
+                for (var _i = 0; _i < _this2.dateArr.length; _i++) {
+                    var year = _this2.dateArr[_i];
+                    for (var j = 0; j < majors.length; j++) {
+                        var major = majors[j].MajorName;
+                        _this2.MajorArr.push(year + '级' + major);
+                    }
+                }
+            }, function (response) {
+                console.log('fail' + response.data);
+            });
+        },
+
+        //获取豆瓣图书
+        getBooksByApi: function getBooksByApi() {
+            var _this3 = this;
+
+            this.$http.jsonp('https://api.douban.com/v2/book/search?q=' + this.searchBook + '&count=' + this.netBooks.pageBooks + '&start=' + this.netBooks.pageOffset).then(function (response) {
+                console.log(response.data.books);
+                _this3.netBooks.bookListLength = response.data.books.length;
+                _this3.netBooks.books = response.data.books;
+                _this3.NetBookLoading = false;
+            }, function (response) {
+                console.log('fail' + response.data);
+            });
+        },
+
         //增加网选教材
         addNetBook: function addNetBook(book) {
             if (this.netBookLists.length === 0) {
                 this.netBookLists.push(book);
-                console.log('从0Add');
+                this.AlertMess = '教材已添加至下方书单';
+                this.AlertStyle = 'color:green';
+                $('#AlertSmModal').modal('show');
             } else {
                 var flag = false;
                 for (var i = 0; i < this.netBookLists.length; i++) {
@@ -47727,9 +47990,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     }
                 }
                 if (flag) {
-                    alert('该教材已添加!');
+                    this.AlertStyle = 'color:red';
+                    this.AlertMess = '该教材已存在于书单中,添加失败!';
+                    $('#AlertSmModal').modal('show');
                 } else {
+                    this.AlertStyle = 'color:green';
+                    this.AlertMess = '教材已添加至下方书单';
                     this.netBookLists.push(book);
+                    $('#AlertSmModal').modal('show');
                 }
             }
             console.log(this.netBookLists);
@@ -47737,19 +48005,191 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         //删除网选教材
         removeFromNetBookList: function removeFromNetBookList(book) {
-            console.log('delete');
             for (var i = 0; i < this.netBookLists.length; i++) {
                 var list = this.netBookLists[i];
-                if (list.isbn13 === book.isbn13) {
+                if (list.isbn13 === book.isbn13 || book.BookIsbn13) {
                     this.netBookLists.splice(i, 1);
-                    console.log(this.netBookLists);
                     break;
                 }
             }
+        },
+
+        //录入网选教材一层事件
+        NetSaveOne: function NetSaveOne(obj) {
+            this.netBooks.saveTotal.BookName = obj.title;
+            this.netBooks.saveTotal.BookAuthor = obj.author[0];
+            this.netBooks.saveTotal.BookPubDate = obj.pubdate;
+            this.netBooks.saveTotal.BookImage = obj.image;
+            this.netBooks.saveTotal.BookPublisher = obj.publisher;
+            this.netBooks.saveTotal.BookIsbn13 = obj.isbn13;
+            this.netBooks.saveTotal.BookPrice = obj.price;
+            this.netBooks.saveTotal.BookPages = obj.pages;
+            this.netBooks.saveTotal.BookAltUrl = obj.alt;
+            console.log(this.netBooks.saveTotal);
+        },
+
+        //录入网选教材二层事件
+        NetSaveTwo: function NetSaveTwo(obj) {
+            this.netBooks.saveTotal.BookCourse = obj.NetlessonName;
+            this.netBooks.saveTotal.BookAward = obj.Award;
+            this.netBooks.saveTotal.BookByOwn = obj.ByOwn;
+            this.netBooks.saveTotal.BookWithSun = obj.WithSun;
+            this.netBooks.saveTotal.BookFromAbroad = obj.FromAbroad;
+            this.netBooks.saveTotal.BookForTea = obj.ForTea;
+            this.netBooks.saveTotal.BookToClass = obj.NetMajor;
+            this.netBooks.saveTotal.Year = obj.NetYear;
+            this.netBooks.saveTotal.Semester = obj.NetTerm;
+            console.log(this.netBooks.saveTotal);
+            var saveBook = this.netBooks.saveTotal;
+            this.netBooks.saveTotal = {};
+            this.SelectedBooks.push(saveBook);
+            console.log(this.SelectedBooks);
+            this.removeFromNetBookList(saveBook);
+            $('#NetModal').modal('hide');
+            var _this = this;
+            setTimeout(function () {
+                _this.AlertStyle = 'color:green';
+                _this.AlertMess = '录入成功,可到已选教材查看';
+                $('#AlertSmModal').modal('show');
+            }, 500);
+        },
+
+        //图片上传
+        onUpload: function onUpload(e) {
+            var _this4 = this;
+
+            this.UploadLoading = true;
+            var formData = new FormData();
+            formData.append('photo', e.target.files[0]);
+            var config = {
+                headers: { 'Content-Type': 'multipart/form-data' }
+            };
+            this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/uploadimg', formData, config).then(function (response) {
+                _this4.selfBooks.Image = response.data.photo;
+                _this4.UploadLoading = false;
+            }, function (response) {
+                console.log('error' + response.data);
+            });
+        },
+
+        //保存自填教材
+        saveSelfBook: function saveSelfBook() {
+            var saveObj = {};
+            saveObj.BookName = this.selfBooks.Name;
+            saveObj.BookAuthor = this.selfBooks.Author;
+            saveObj.BookPubDate = this.selfBooks.PublicDate;
+            saveObj.BookImage = this.selfBooks.Image;
+            saveObj.BookPublisher = this.selfBooks.Publisher;
+            saveObj.BookIsbn13 = this.selfBooks.ISBN13;
+            saveObj.BookPrice = this.selfBooks.Price;
+            saveObj.BookPages = this.selfBooks.Page;
+            saveObj.BookAltUrl = this.selfBooks.AltUrl;
+            saveObj.BookCourse = this.selfBooks.LessonName;
+            saveObj.BookAward = this.selfBooks.Award;
+            saveObj.BookByOwn = this.selfBooks.ByOwn;
+            saveObj.BookWithSun = this.selfBooks.WithSun;
+            saveObj.BookFromAbroad = this.selfBooks.FromAbroad;
+            saveObj.BookForTea = this.selfBooks.ForTea;
+            saveObj.BookToClass = this.selfBooks.Major;
+            saveObj.Year = this.selfBooks.Year;
+            saveObj.Semester = this.selfBooks.Term;
+            this.selfBooks = {};
+            this.SelectedBooks.push(saveObj);
+            console.log(this.SelectedBooks);
+            var _this = this;
+            setTimeout(function () {
+                _this.AlertStyle = 'color:green';
+                _this.AlertMess = '录入成功,可到已选教材查看';
+                $('#AlertSmModal').modal('show');
+            }, 200);
+        },
+
+        //保存已选的教材至数据库
+        saveSelectedBook: function saveSelectedBook() {
+            var _this5 = this;
+
+            this.SubmitLoading = true;
+            this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/savebooks', this.SelectedBooks).then(function (response) {
+                _this5.SubmitLoading = false;
+                var status = response.data.status_code;
+                if (status === 200) {
+                    _this5.AlertStyle = 'color:green';
+                    _this5.AlertMess = '以下教材已成功提交至教务部';
+                    $('#AlertSmModal').modal('show');
+                    _this5.SelectedBooks = [];
+                }
+            }, function (response) {
+                _this5.SubmitLoading = false;
+                _this5.AlertStyle = 'color:red';
+                _this5.AlertMess = response.data;
+                $('#AlertSmModal').modal('show');
+            });
+        },
+
+        //根据条件查询往年记录
+        searchRecord: function searchRecord() {
+            var _this6 = this;
+
+            this.SearchLoading = true;
+            if (this.BookRecord.Year === '' || this.BookRecord.Term === '' || this.BookRecord.Major === undefined) {
+                this.AlertStyle = 'color:red';
+                this.AlertMess = '请选择完整的查询条件';
+                $('#AlertSmModal').modal('show');
+                this.SearchLoading = false;
+            } else {
+                this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/searchrecord', this.BookRecord).then(function (response) {
+                    _this6.SearchLoading = false;
+                    if (response.data.status_code === 200) {
+                        if (response.data.res.length > 0) {
+                            _this6.RecordData = response.data.res;
+                        } else {
+                            _this6.RecordData = [];
+                            _this6.AlertStyle = 'color:#FF9800';
+                            _this6.AlertMess = '暂无该查询条件的数据';
+                            $('#AlertSmModal').modal('show');
+                        }
+                    }
+                }, function (response) {
+                    _this6.SearchLoading = false;
+                    _this6.AlertStyle = 'color:red';
+                    _this6.AlertMess = response.data;
+                    $('#AlertSmModal').modal('show');
+                });
+            }
+        },
+
+        //翻页函数
+        goToPage: function goToPage(item) {
+            if (this.netBooks.nowPage !== item) {
+                this.NetBookLoading = true;
+                this.netBooks.nowPage = item;
+                this.netBooks.pageOffset = (this.netBooks.nowPage - 1) * this.netBooks.pageBooks;
+                this.getBooksByApi();
+            }
+        },
+
+        nextPage: function nextPage() {
+            if (this.netBooks.nowPage < this.netBooks.pageNum) {
+                this.NetBookLoading = true;
+                this.netBooks.nowPage++;
+                this.netBooks.pageOffset = (this.netBooks.nowPage - 1) * this.netBooks.pageBooks;
+                this.getBooksByApi();
+            }
+        },
+
+        prePage: function prePage() {
+            if (this.netBooks.nowPage > 1) {
+                this.NetBookLoading = true;
+                this.netBooks.nowPage--;
+                this.netBooks.pageOffset = (this.netBooks.nowPage - 1) * this.netBooks.pageBooks;
+                this.getBooksByApi();
+            }
         }
+
     },
     mounted: function mounted() {
         console.log('Teacher Component mounted.');
+        this.getMajors();
         //            this.$http.get('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/user/login').then((response) => {
         //                console.log(response.data);
         //            },(response) => {
@@ -47774,7 +48214,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "#"
     }
-  }, [_vm._v("\n                    菜单栏\n                ")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("菜单栏")]), _vm._v(" "), _c('a', {
     staticClass: "list-group-item",
     attrs: {
       "href": "#"
@@ -47804,7 +48244,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.showBlock = 3
       }
     }
-  }, [_vm._v("往年记录")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("教材记录")]), _vm._v(" "), _c('a', {
     staticClass: "list-group-item",
     attrs: {
       "href": "#"
@@ -47861,14 +48301,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "netBooks.bookListLength"
     }],
     staticClass: "row netbooklists"
-  }, [_c('transition-group', {
-    attrs: {
-      "name": "list"
-    }
   }, _vm._l((_vm.netBooks.books), function(book) {
     return _c('div', {
       key: book.id,
-      staticClass: "col-xs-12 col-md-4"
+      staticClass: "col-xs-12 col-md-4",
+      staticStyle: {
+        "height": "450px"
+      }
     }, [_c('a', {
       staticClass: "thumbnail",
       attrs: {
@@ -47904,7 +48343,67 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }
     }, [_vm._v("加入书单")])])
-  }))], 1), _vm._v(" "), _c('div', {
+  })), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.NetBookLoading),
+      expression: "NetBookLoading"
+    }],
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "bounce1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce3"
+  })]), _vm._v(" "), _c('nav', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.netBooks.bookListLength),
+      expression: "netBooks.bookListLength"
+    }],
+    staticStyle: {
+      "text-align": "center"
+    },
+    attrs: {
+      "aria-label": "Page navigation"
+    }
+  }, [_c('ul', {
+    staticClass: "pagination",
+    staticStyle: {
+      "cursor": "pointer"
+    }
+  }, [_c('li', [_c('span', {
+    on: {
+      "click": _vm.prePage
+    }
+  }, [_c('span', {
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("«")])])]), _vm._v(" "), _vm._l((_vm.netBooks.pageNum), function(item) {
+    return _c('li', {
+      class: {
+        active: item === _vm.netBooks.nowPage
+      }
+    }, [_c('span', {
+      on: {
+        "click": function($event) {
+          _vm.goToPage(item)
+        }
+      }
+    }, [_vm._v(_vm._s(item))])])
+  }), _vm._v(" "), _c('li', [_c('span', {
+    on: {
+      "click": _vm.nextPage
+    }
+  }, [_c('span', {
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("»")])])])], 2)]), _vm._v(" "), _c('div', {
     staticClass: "booklist"
   }, [_c('span', {
     staticClass: "label label-primary"
@@ -47912,7 +48411,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "table-responsive"
   }, [_c('table', {
     staticClass: "table table-hover"
-  }, [_vm._m(2), _vm._v(" "), _c('tbody', _vm._l((_vm.netBookLists), function(selectedBook, index) {
+  }, [_vm._m(2), _vm._v(" "), _c("transition-group", {
+    tag: "tbody",
+    attrs: {
+      "name": "list"
+    }
+  }, _vm._l((_vm.netBookLists), function(selectedBook, index) {
     return _c('tr', {
       key: index
     }, [_c('th', {
@@ -47920,18 +48424,43 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "scope": "row"
       }
     }, [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(selectedBook.title ? selectedBook.title : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(selectedBook.author[0] ? selectedBook.author[0] : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(selectedBook.isbn13 ? selectedBook.isbn13 : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(selectedBook.publisher ? selectedBook.publisher : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(selectedBook.pubdate ? selectedBook.pubdate : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(selectedBook.price ? selectedBook.price : '未知'))]), _vm._v(" "), _c('th', [_c('button', {
+      staticClass: "btn btn-primary btn-sm",
+      attrs: {
+        "type": "button",
+        "data-toggle": "modal",
+        "data-target": "#NetModal"
+      },
+      on: {
+        "click": function($event) {
+          _vm.NetSaveOne(selectedBook)
+        }
+      }
+    }, [_vm._v("\n                                            录入\n                                        ")]), _vm._v(" "), _c('button', {
       staticClass: "btn btn-danger btn-sm",
       on: {
         "click": function($event) {
           _vm.removeFromNetBookList(selectedBook)
         }
       }
-    }, [_c('span', {
-      staticClass: "glyphicon glyphicon-remove"
-    })])])])
-  }))])])]), _vm._v(" "), _c('span', {
-    staticClass: "label label-primary"
-  }, [_vm._v("录入以上表格教材")]), _vm._v(" "), _c('div', {
+    }, [_vm._v("\n                                            删除\n                                        ")])])])
+  }))])])]), _vm._v(" "), _c('div', {
+    staticClass: "modal fade",
+    attrs: {
+      "id": "NetModal",
+      "tabindex": "-1",
+      "role": "dialog",
+      "aria-labelledby": "NetModalLabel"
+    }
+  }, [_c('div', {
+    staticClass: "modal-dialog",
+    attrs: {
+      "role": "document"
+    }
+  }, [_c('div', {
+    staticClass: "modal-content"
+  }, [_vm._m(3), _vm._v(" "), _c('div', {
+    staticClass: "modal-body"
+  }, [_c('div', {
     staticClass: "fillin"
   }, [_c('form', [_c('div', {
     staticClass: "form-group"
@@ -47939,30 +48468,248 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.netBooks.NetlessonName),
-      expression: "netBooks.NetlessonName"
+      value: (_vm.netBooks.saveMess.NetlessonName),
+      expression: "netBooks.saveMess.NetlessonName"
     }],
     staticClass: "form-control",
     attrs: {
-      "type": "email",
+      "type": "text",
       "id": "Net-lessonName",
-      "placeholder": "输入课程名称"
+      "placeholder": "输入教材对应的课程"
     },
     domProps: {
-      "value": (_vm.netBooks.NetlessonName)
+      "value": (_vm.netBooks.saveMess.NetlessonName)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.netBooks.NetlessonName = $event.target.value
+        _vm.netBooks.saveMess.NetlessonName = $event.target.value
       }
     }
-  })]), _vm._v(" "), _c('button', {
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.Award),
+      expression: "netBooks.saveMess.Award"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Net-award",
+      "placeholder": "教材获奖情况（省/部级、十五规划等）"
+    },
+    domProps: {
+      "value": (_vm.netBooks.saveMess.Award)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.netBooks.saveMess.Award = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.ByOwn),
+      expression: "netBooks.saveMess.ByOwn"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Net-ByOwn",
+      "placeholder": "是否自编教材（如是，请备注任职我院教师名字）"
+    },
+    domProps: {
+      "value": (_vm.netBooks.saveMess.ByOwn)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.netBooks.saveMess.ByOwn = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.WithSun),
+      expression: "netBooks.saveMess.WithSun"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Net-WithSun",
+      "placeholder": "是否与中山大学出版社立项建设的系列教材"
+    },
+    domProps: {
+      "value": (_vm.netBooks.saveMess.WithSun)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.netBooks.saveMess.WithSun = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.FromAbroad),
+      expression: "netBooks.saveMess.FromAbroad"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Net-FromAbroad",
+      "placeholder": "是否境外教材"
+    },
+    domProps: {
+      "value": (_vm.netBooks.saveMess.FromAbroad)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.netBooks.saveMess.FromAbroad = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.ForTea),
+      expression: "netBooks.saveMess.ForTea"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Net-ForTea",
+      "placeholder": "教师征订本教材数量（本）"
+    },
+    domProps: {
+      "value": (_vm.netBooks.saveMess.ForTea)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.netBooks.saveMess.ForTea = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_c('label', {
+    attrs: {
+      "for": "NetYear"
+    }
+  }, [_vm._v("学年")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.NetYear),
+      expression: "netBooks.saveMess.NetYear"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "NetYear",
+      "disabled": ""
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.netBooks.saveMess.NetYear = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "selected": ""
+    }
+  }, [_vm._v(_vm._s(_vm.netBooks.saveMess.NetYear))])])]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_c('label', {
+    attrs: {
+      "for": "NetTerm"
+    }
+  }, [_vm._v("请选择学期")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.NetTerm),
+      expression: "netBooks.saveMess.NetTerm"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "NetTerm"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.netBooks.saveMess.NetTerm = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', [_vm._v("第一学期")]), _vm._v(" "), _c('option', [_vm._v("第二学期")])])]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_c('label', {
+    attrs: {
+      "for": "NetMajor"
+    }
+  }, [_vm._v("请选择录入专业")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.netBooks.saveMess.NetMajor),
+      expression: "netBooks.saveMess.NetMajor"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "NetMajor"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.netBooks.saveMess.NetMajor = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, _vm._l((_vm.MajorArr), function(MajorVal, key) {
+    return _c('option', {
+      key: key
+    }, [_vm._v(_vm._s(MajorVal))])
+  }))]), _vm._v(" "), _c('button', {
     staticClass: "btn btn-primary btn-block",
     attrs: {
       "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.NetSaveTwo(_vm.netBooks.saveMess)
+      }
     }
-  }, [_vm._v("录入教材")])])])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("录入教材")])])])]), _vm._v(" "), _vm._m(4)])])])])]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -47972,7 +48719,477 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "formMyself"
     }
-  }, [_vm._m(3)]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "col-md-9 content-plane"
+  }, [_vm._m(5), _vm._v(" "), _c('div', {
+    staticClass: "fillin"
+  }, [_c('form', [_c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(6), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.LessonName),
+      expression: "selfBooks.LessonName"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-lessonName1"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.LessonName)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.LessonName = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(7), _vm._v(" "), _c('div', {
+    staticClass: "input-group"
+  }, [_c('div', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("《")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Name),
+      expression: "selfBooks.Name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-Book1"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.Name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.Name = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("》")])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(8), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Author),
+      expression: "selfBooks.Author"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-Author1"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.Author)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.Author = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(9), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Publisher),
+      expression: "selfBooks.Publisher"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-PublishMent1"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.Publisher)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.Publisher = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(10), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.PublicDate),
+      expression: "selfBooks.PublicDate"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "date",
+      "id": "Self-PublishTime1"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.PublicDate)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.PublicDate = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(11), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.ISBN13),
+      expression: "selfBooks.ISBN13"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-ISBN1",
+      "placeholder": "请输入13位ISBN"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.ISBN13)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.ISBN13 = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(12), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Page),
+      expression: "selfBooks.Page"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-Page1",
+      "placeholder": "请输入教材页数(只填数字)"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.Page)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.Page = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(13), _vm._v(" "), _c('div', {
+    staticClass: "input-group"
+  }, [_c('div', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("¥")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Price),
+      expression: "selfBooks.Price"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-Price1",
+      "placeholder": "只填数字"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.Price)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.Price = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(14), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.AltUrl),
+      expression: "selfBooks.AltUrl"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-AltUrl1",
+      "placeholder": "请输入完整URL(包括http/https前缀)"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.AltUrl)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.AltUrl = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(15), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Award),
+      expression: "selfBooks.Award"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-Award1",
+      "placeholder": "无获奖情况则不填"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.Award)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.Award = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(16), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.ByOwn),
+      expression: "selfBooks.ByOwn"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-ByOwn1",
+      "placeholder": "例如: 是(陈老师编)"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.ByOwn)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.ByOwn = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(17), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.WithSun),
+      expression: "selfBooks.WithSun"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-WithSun1",
+      "placeholder": "是/否"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.WithSun)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.WithSun = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(18), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.FromAbroad),
+      expression: "selfBooks.FromAbroad"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-FromAbroad1",
+      "placeholder": "是/否"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.FromAbroad)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.FromAbroad = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(19), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.ForTea),
+      expression: "selfBooks.ForTea"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "Self-ForTea",
+      "placeholder": "只填数字"
+    },
+    domProps: {
+      "value": (_vm.selfBooks.ForTea)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selfBooks.ForTea = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_vm._m(20), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Year),
+      expression: "selfBooks.Year"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "Self-Year",
+      "disabled": ""
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.selfBooks.Year = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "selected": ""
+    }
+  }, [_vm._v(_vm._s(_vm.selfBooks.Year))])])]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_vm._m(21), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Term),
+      expression: "selfBooks.Term"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "Self-Term"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.selfBooks.Term = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', [_vm._v("第一学期")]), _vm._v(" "), _c('option', [_vm._v("第二学期")])])]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_vm._m(22), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selfBooks.Major),
+      expression: "selfBooks.Major"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "Self-Major"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.selfBooks.Major = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, _vm._l((_vm.MajorArr), function(MajorVal, key) {
+    return _c('option', {
+      key: key
+    }, [_vm._v(_vm._s(MajorVal))])
+  }))]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_vm._m(23), _vm._v(" "), _c('input', {
+    attrs: {
+      "type": "file",
+      "id": "Self-Img1",
+      "accept": "image/gif,image/jpeg,image/jpg,image/png,image/svg"
+    },
+    on: {
+      "change": _vm.onUpload
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-xs-6 col-md-3"
+  }, [_c('a', {
+    staticClass: "thumbnail",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.selfBooks.Image
+    }
+  })])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.UploadLoading),
+      expression: "UploadLoading"
+    }],
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "bounce1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce3"
+  })]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-primary btn-block",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.saveSelfBook
+    }
+  }, [_vm._v("录入教材")])])])])]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -47982,7 +49199,142 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "OldRecord"
     }
-  }, [_vm._m(4)]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "col-md-9  content-plane"
+  }, [_vm._m(24), _vm._v(" "), _c('div', {
+    staticClass: "fillin"
+  }, [_c('div', {
+    staticClass: "select-content"
+  }, [_vm._m(25), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.BookRecord.Year),
+      expression: "BookRecord.Year"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "RecoYear"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.BookRecord.Year = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', [_vm._v("2017年")]), _vm._v(" "), _c('option', [_vm._v("2016年")]), _vm._v(" "), _c('option', [_vm._v("2015年")]), _vm._v(" "), _c('option', [_vm._v("2014年")]), _vm._v(" "), _c('option', [_vm._v("2013年")])])]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_vm._m(26), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.BookRecord.Term),
+      expression: "BookRecord.Term"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "RecoTerm"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.BookRecord.Term = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', [_vm._v("第一学期")]), _vm._v(" "), _c('option', [_vm._v("第二学期")])])]), _vm._v(" "), _c('div', {
+    staticClass: "select-content"
+  }, [_vm._m(27), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.BookRecord.Major),
+      expression: "BookRecord.Major"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "RecordMajor"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.BookRecord.Major = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, _vm._l((_vm.MajorArr), function(Major, key) {
+    return _c('option', {
+      key: key
+    }, [_vm._v(_vm._s(Major))])
+  }))]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-primary btn-block",
+    staticStyle: {
+      "margin-bottom": "10px"
+    },
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.searchRecord
+    }
+  }, [_vm._v("查询记录")]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.SearchLoading),
+      expression: "SearchLoading"
+    }],
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "bounce1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce3"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "booklist"
+  }, [_c('span', {
+    staticClass: "label label-primary"
+  }, [_vm._v(_vm._s(_vm.BookRecord.Year ? _vm.BookRecord.Year : '未选择学年'))]), _vm._v(" "), _c('span', {
+    staticClass: "label label-primary"
+  }, [_vm._v(_vm._s(_vm.BookRecord.Term ? _vm.BookRecord.Term : '未选择学期'))]), _vm._v(" "), _c('span', {
+    staticClass: "label label-primary"
+  }, [_vm._v(_vm._s(_vm.BookRecord.Major ? _vm.BookRecord.Major : '未选择专业'))]), _vm._v(" "), _c('div', {
+    staticClass: "table-responsive"
+  }, [_c('table', {
+    staticClass: "table table-hover"
+  }, [_vm._m(28), _vm._v(" "), _c("transition-group", {
+    tag: "tbody",
+    attrs: {
+      "name": "list"
+    }
+  }, _vm._l((_vm.RecordData), function(record, index) {
+    return _c('tr', {
+      key: index
+    }, [_c('th', {
+      attrs: {
+        "scope": "row"
+      }
+    }, [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c('th', [_c('a', {
+      attrs: {
+        "href": record.BookAltUrl,
+        "target": "_blank"
+      }
+    }, [_vm._v(_vm._s(record.BookName))])]), _vm._v(" "), _c('th', [_vm._v(_vm._s(record.BookAuthor))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(record.BookIsbn13))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(record.BookPublisher))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(record.BookPubDate))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(record.BookPrice))])])
+  }))])])])])]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -47992,7 +49344,82 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "NowRecord"
     }
-  }, [_vm._m(5)])])
+  }, [_c('div', {
+    staticClass: "col-md-9 content-plane"
+  }, [_vm._m(29), _vm._v(" "), _c('div', {
+    staticClass: "booklist"
+  }, [_c('span', {
+    staticClass: "label label-primary"
+  }, [_vm._v(_vm._s(_vm.nowYear))]), _vm._v(" "), _c('div', {
+    staticClass: "table-responsive"
+  }, [_c('table', {
+    staticClass: "table table-hover"
+  }, [_vm._m(30), _vm._v(" "), _c("transition-group", {
+    tag: "tbody",
+    attrs: {
+      "name": "list"
+    }
+  }, _vm._l((_vm.SelectedBooks), function(book, index) {
+    return _c('tr', {
+      key: index
+    }, [_c('th', {
+      attrs: {
+        "scope": "row"
+      }
+    }, [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c('th', [_c('a', {
+      attrs: {
+        "href": book.BookAltUrl,
+        "target": "_blank"
+      }
+    }, [_vm._v(_vm._s(book.BookName))])]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookAuthor ? book.BookAuthor : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookIsbn13 ? book.BookIsbn13 : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPublisher ? book.BookPublisher : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPubDate ? book.BookPubDate : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookCourse ? book.BookCourse : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookToClass ? book.BookToClass : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.Year + book.Semester ? book.Year + book.Semester : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPrice ? book.BookPrice : '未知'))])])
+  }))])])]), _vm._v(" "), _c('button', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.SelectedBooks.length != 0),
+      expression: "SelectedBooks.length != 0"
+    }],
+    staticClass: "btn btn-success btn-block",
+    on: {
+      "click": _vm.saveSelectedBook
+    }
+  }, [_vm._v("提交以上教材至教务部")]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.SubmitLoading),
+      expression: "SubmitLoading"
+    }],
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "bounce1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce3"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "modal fade bs-example-modal-sm",
+    attrs: {
+      "id": "AlertSmModal",
+      "tabindex": "-1",
+      "role": "dialog",
+      "aria-labelledby": "AlertModalLabel"
+    }
+  }, [_c('div', {
+    staticClass: "modal-dialog modal-sm",
+    attrs: {
+      "role": "document"
+    }
+  }, [_c('div', {
+    staticClass: "modal-content"
+  }, [_vm._m(31), _vm._v(" "), _c('div', {
+    staticClass: "modal-body",
+    staticStyle: {
+      "text-align": "center"
+    }
+  }, [_c('span', {
+    style: (_vm.AlertStyle)
+  }, [_vm._v(_vm._s(_vm.AlertMess))])])])])]), _vm._v(" "), _vm._m(32)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page-header text-center"
@@ -48007,242 +49434,248 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("参考价格")]), _vm._v(" "), _c('th', [_vm._v("操作")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "col-md-9 content-plane"
-  }, [_c('div', {
+    staticClass: "modal-header"
+  }, [_c('button', {
+    staticClass: "close",
+    attrs: {
+      "type": "button",
+      "data-dismiss": "modal",
+      "aria-label": "Close"
+    }
+  }, [_c('span', {
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("×")])]), _vm._v(" "), _c('h4', {
+    staticClass: "modal-title",
+    attrs: {
+      "id": "NetModalLabel"
+    }
+  }, [_vm._v("请输入教材信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button",
+      "data-dismiss": "modal"
+    }
+  }, [_vm._v("关闭")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "page-header text-center"
-  }, [_c('h3', [_vm._v("自填教材")])]), _vm._v(" "), _c('div', {
-    staticClass: "fillin"
-  }, [_c('form', [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_c('h3', [_vm._v("自填教材")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-lessonName1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("课程名称")])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "Self-lessonName1"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_vm._v("课程名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-Book1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("教材名称")])]), _vm._v(" "), _c('div', {
-    staticClass: "input-group"
-  }, [_c('div', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("《")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "Self-Book1"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("》")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_vm._v("教材名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-Author1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("作者")])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "Self-Author1"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_vm._v("作者")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-PublishMent1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("出版社")])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "Self-PublishMent1"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_vm._v("出版社")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-PublishTime1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("出版年份")])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "date",
-      "id": "Self-PublishTime1"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_vm._v("出版年份")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-ISBN1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("ISBN")])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
+  }, [_vm._v("ISBN")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
-      "type": "text",
-      "id": "Self-ISBN1"
+      "for": "Self-Page1"
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("页数")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-Price1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("参考价格")])]), _vm._v(" "), _c('div', {
-    staticClass: "input-group"
-  }, [_c('div', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("¥")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
+  }, [_vm._v("参考价格")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
-      "type": "text",
-      "id": "Self-Price1"
+      "for": "Self-AltUrl1"
     }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("参考购书地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-Award1"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("教材获奖情况（省/部级、十五规划等）")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-ByOwn1"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("是否自编教材（如是，请备注任职我院教师名字）")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-WithSun1"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("是否与中山大学出版社立项建设的系列教材")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-FromAbroad1"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("是否境外教材")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-ForTea"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("教师征订本教材数量（本）")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-Year"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("学年")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-Term"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("请选择学期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
+    attrs: {
+      "for": "Self-Major"
+    }
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("请选择录入专业")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "Self-Img1"
     }
   }, [_c('span', {
     staticClass: "label label-info"
-  }, [_vm._v("上传教材图片(可选)")])]), _vm._v(" "), _c('input', {
-    attrs: {
-      "type": "file",
-      "id": "Self-Img1"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-xs-6 col-md-3"
-  }, [_c('a', {
-    staticClass: "thumbnail",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": "",
-      "alt": "..."
-    }
-  })])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary btn-block",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("录入教材")])])])])
+  }, [_vm._v("上传教材图片(可选)")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "col-md-9  content-plane"
-  }, [_c('div', {
     staticClass: "page-header text-center"
-  }, [_c('h3', [_vm._v("往年记录")])]), _vm._v(" "), _c('div', {
-    staticClass: "fillin"
-  }, [_c('div', {
-    staticClass: "select-content"
-  }, [_c('label', {
+  }, [_c('h3', [_vm._v("教材记录")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "RecoYear"
     }
-  }, [_vm._v("请选择学年")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "RecoYear"
-    }
-  }, [_c('option', [_vm._v("2017年")]), _vm._v(" "), _c('option', [_vm._v("2016年")]), _vm._v(" "), _c('option', [_vm._v("2015年")]), _vm._v(" "), _c('option', [_vm._v("2014年")]), _vm._v(" "), _c('option', [_vm._v("2013年")])])]), _vm._v(" "), _c('div', {
-    staticClass: "select-content"
-  }, [_c('label', {
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("请选择学年")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
       "for": "RecoTerm"
     }
-  }, [_vm._v("请选择学期")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "RecoTerm"
-    }
-  }, [_c('option', [_vm._v("第一学期")]), _vm._v(" "), _c('option', [_vm._v("第二学期")])])]), _vm._v(" "), _c('div', {
-    staticClass: "select-content"
-  }, [_c('label', {
-    attrs: {
-      "for": "Recolesson"
-    }
-  }, [_vm._v("请选择系别")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "Recolesson"
-    }
-  }, [_c('option', [_vm._v("电子与信息工程系")]), _vm._v(" "), _c('option', [_vm._v("计算机系")]), _vm._v(" "), _c('option', [_vm._v("数学系")]), _vm._v(" "), _c('option', [_vm._v("英语系")]), _vm._v(" "), _c('option', [_vm._v("经济学系")])])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary btn-block",
-    staticStyle: {
-      "margin-bottom": "10px"
-    },
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("查询记录")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary btn-block",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("查看往年全部记录")])]), _vm._v(" "), _c('div', {
-    staticClass: "booklist"
   }, [_c('span', {
-    staticClass: "label label-primary"
-  }, [_vm._v("2017年")]), _vm._v(" "), _c('span', {
-    staticClass: "label label-primary"
-  }, [_vm._v("第一学期")]), _vm._v(" "), _c('span', {
-    staticClass: "label label-primary"
-  }, [_vm._v("电子与信息工程系")]), _vm._v(" "), _c('div', {
-    staticClass: "table-responsive"
-  }, [_c('table', {
-    staticClass: "table table-hover"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("参考价格")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('th', {
+    staticClass: "label label-info"
+  }, [_vm._v("请选择学期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('label', {
     attrs: {
-      "scope": "row"
+      "for": "RecordMajor"
     }
-  }, [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("PHP教程")]), _vm._v(" "), _c('th', [_vm._v("高洛峰")]), _vm._v(" "), _c('th', [_vm._v("142531659")]), _vm._v(" "), _c('th', [_vm._v("清华大学出版社")]), _vm._v(" "), _c('th', [_vm._v("2016年9月")]), _vm._v(" "), _c('th', [_vm._v("50.0")])])])])])])])
+  }, [_c('span', {
+    staticClass: "label label-info"
+  }, [_vm._v("请选择专业")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("参考价格")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "col-md-9 content-plane"
-  }, [_c('div', {
     staticClass: "page-header text-center"
-  }, [_c('h3', [_vm._v("已录教材")])]), _vm._v(" "), _c('div', {
-    staticClass: "booklist"
-  }, [_c('span', {
-    staticClass: "label label-primary"
-  }, [_vm._v("2017年")]), _vm._v(" "), _c('span', {
-    staticClass: "label label-primary"
-  }, [_vm._v("第一学期")]), _vm._v(" "), _c('span', {
-    staticClass: "label label-primary"
-  }, [_vm._v("电子与信息工程系")]), _vm._v(" "), _c('div', {
-    staticClass: "table-responsive"
-  }, [_c('table', {
-    staticClass: "table table-hover"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("参考价格")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('th', {
+  }, [_c('h3', [_vm._v("已录教材")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("使用课程")]), _vm._v(" "), _c('th', [_vm._v("发放专业")]), _vm._v(" "), _c('th', [_vm._v("使用学年")]), _vm._v(" "), _c('th', [_vm._v("参考价格")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal-header"
+  }, [_c('button', {
+    staticClass: "close",
     attrs: {
-      "scope": "row"
+      "type": "button",
+      "data-dismiss": "modal",
+      "aria-label": "Close"
     }
-  }, [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("PHP教程")]), _vm._v(" "), _c('th', [_vm._v("高洛峰")]), _vm._v(" "), _c('th', [_vm._v("142531659")]), _vm._v(" "), _c('th', [_vm._v("清华大学出版社")]), _vm._v(" "), _c('th', [_vm._v("2016年9月")]), _vm._v(" "), _c('th', [_vm._v("50.0")])])])])])])])
+  }, [_c('span', {
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("×")])]), _vm._v(" "), _c('h5', {
+    staticClass: "modal-title",
+    attrs: {
+      "id": "AlertModalLabel"
+    }
+  }, [_vm._v("提示")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "toTop"
+  }, [_c('a', {
+    attrs: {
+      "href": "#navTop"
+    }
+  }, [_c('span', {
+    staticClass: "glyphicon glyphicon-arrow-up"
+  }), _vm._v(" "), _c('div', [_c('span', [_vm._v("Top")])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -48331,7 +49764,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.warp[data-v-881ff82c]{\n    padding-top: 20px;\n    padding-bottom: 250px;\n}\n.userBlock[data-v-881ff82c]{\n    text-align: center;\n    background-color: #14A96F;\n    border: 1px solid #14A96F;\n    border-radius: 10px;\n}\n.alert[data-v-881ff82c]{\n    text-align: center;\n}\n.userInfo[data-v-881ff82c]{\n    margin-top: 20px;\n}\n.userInfo > span[data-v-881ff82c]{\n    color: #fafafa;\n    margin-bottom: 20px;\n    display: block;\n}\n.SelectTitle[data-v-881ff82c]{\n    width: 100%;\n    background-color: #14A96F;\n    color: #fafafa;\n    text-align: center;\n    height: 40px;\n    line-height: 40px;\n    border: 1px solid #14A96F;\n    border-radius: 5px;\n}\n.SelectBook table[data-v-881ff82c]{\n    margin-top: 10px;\n}\nth[data-v-881ff82c]{\n    text-align: center;\n}\n.selectAll[data-v-881ff82c]{\n    text-align: right;\n}\n.infoBlock[data-v-881ff82c]{\n    margin-top: 30px;\n    text-align: center;\n}\n#butBuy[data-v-881ff82c]{\n    margin: 5px auto 0;\n}\n@media (min-width: 1400px){\n.container[data-v-881ff82c] {\n        width: 1350px;\n}\n#butBuy[data-v-881ff82c]{\n        width: 50%;\n}\n}\n@media (max-width: 992px){\n.col-md-9[data-v-881ff82c] {\n        margin-top: 20px;\n}\n.SelectBook[data-v-881ff82c]{\n        margin-top: 10px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -48352,8 +49785,293 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            Year: '',
+            Term: '',
+            hadBooked: false,
+            postObj: {},
+            EmptyBook: false,
+            user: {},
+            bookLists: [],
+            queryData: {},
+            saveArr: [],
+            SubmitLoading: false,
+            AlertMess: '',
+            AlertStyle: ''
+        };
+    },
+
+    watch: {
+        saveArr: function saveArr() {
+            console.log(this.saveArr);
+        }
+    },
+    methods: {
+        getBooks: function getBooks() {
+            var _this2 = this;
+
+            this.user.Term = this.Year + '' + this.Term;
+            this.queryData.term = this.Term;
+            this.queryData.year = this.Year;
+            this.queryData.period = this.user.StuPeriod + '' + this.user.StuClass;
+            this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/getbooks', this.queryData).then(function (response) {
+                _this2.bookLists = response.data;
+                if (_this2.bookLists.length === 0) {
+                    _this2.EmptyBook = true;
+                }
+            }, function (response) {
+                console.log('error:' + response.data);
+            });
+        },
+
+        allChecked: function allChecked(event) {
+            var _this = this;
+            if (!event.currentTarget.checked) {
+                this.saveArr = [];
+            } else {
+                //实现全选
+                _this.saveArr = [];
+                _this.bookLists.forEach(function (item) {
+                    _this.saveArr.push(item);
+                });
+            }
+        },
+
+        addBooks: function addBooks() {
+            var _this4 = this;
+
+            if (this.saveArr.length === 0) {
+                var _this = this;
+                setTimeout(function () {
+                    _this.AlertStyle = 'color:red';
+                    _this.AlertMess = '请至少选择一本教材';
+                    $('#AlertSmModal').modal('show');
+                }, 100);
+            } else {
+                this.SubmitLoading = true;
+                this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/addamount', this.saveArr).then(function (response) {
+                    var status = response.data.status;
+                    if (status === 'success') {
+                        var _this3 = _this4;
+                        _this3.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/hadbooked', _this4.postObj).then(function (resp) {
+                            if (resp.data) {
+                                setTimeout(function () {
+                                    _this3.AlertStyle = 'color:green';
+                                    _this3.AlertMess = '征订成功!';
+                                    $('#AlertSmModal').modal('show');
+                                }, 200);
+                                _this3.SubmitLoading = false;
+                                _this3.hadBooked = true;
+                            }
+                        }, function (resp) {
+                            console.log('error:' + resp.data);
+                        });
+                    }
+                }, function (response) {
+                    console.log(response.data);
+                    _this4.SubmitLoading = false;
+                });
+            }
+        },
+        checkIfBooked: function checkIfBooked() {
+            var _this5 = this;
+
+            this.postObj = {
+                'stuAcc': this.user.StuAccount,
+                'hadYear': this.Year,
+                'hadSemester': this.Term
+            };
+            this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/checkifbooked', this.postObj).then(function (response) {
+                var bookedNum = response.data[0].HadSubscribe;
+                _this5.hadBooked = bookedNum !== '0';
+            }, function (response) {
+                console.log(response.data);
+            });
+        },
+        getCurrentDate: function getCurrentDate() {
+            var myDate = new Date();
+            var nowYear = myDate.getFullYear() + '年';
+            var nowMonth = myDate.getMonth() + 1;
+            var nowTerm = '';
+            if (nowMonth > 6 && nowMonth < 10) {
+                nowTerm = '第一学期';
+            } else {
+                nowTerm = '第二学期';
+            }
+            this.Year = nowYear;
+            this.Term = nowTerm;
+        }
+
+    },
+    mounted: function mounted() {
+        console.log('Student Component mounted.');
+        this.getCurrentDate();
+        this.user = JSON.parse(document.getElementById('acc').value);
+        console.log(this.user);
+        this.checkIfBooked();
+        this.getBooks();
+    }
+});
 
 /***/ }),
 /* 55 */
@@ -48361,9 +50079,195 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "alert"
-  }, [_vm._v("\n    I am a Student\n")])
-},staticRenderFns: []}
+    staticClass: "container warp"
+  }, [_c('div', {
+    staticClass: "col-md-3"
+  }, [_c('div', {
+    staticClass: "userBlock"
+  }, [_c('img', {
+    attrs: {
+      "src": "/MaterialsSub/laravel/public/images/user.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "userInfo"
+  }, [_c('span', [_vm._v("姓名：" + _vm._s(_vm.user.StuName))]), _vm._v(" "), _c('span', [_vm._v("院系：" + _vm._s(_vm.user.StuDepartment))]), _vm._v(" "), _c('span', [_vm._v("专业：" + _vm._s(_vm.user.StuClass))]), _vm._v(" "), _c('span', [_vm._v("年级：" + _vm._s(_vm.user.StuPeriod))]), _vm._v(" "), _c('span', [_vm._v("当前教材使用学期：" + _vm._s(_vm.user.Term))])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-9"
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.hadBooked),
+      expression: "hadBooked"
+    }],
+    staticClass: "alert alert-success",
+    attrs: {
+      "role": "alert"
+    }
+  }, [_vm._v("您已征订本学期教材")]), _vm._v(" "), (_vm.EmptyBook) ? _c('div', {
+    staticClass: "alert alert-warning",
+    attrs: {
+      "role": "alert"
+    }
+  }, [_vm._v("暂无可征订教材")]) : _vm._e(), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.hadBooked && !_vm.EmptyBook),
+      expression: " !hadBooked && !EmptyBook "
+    }],
+    staticClass: "SelectTitle"
+  }, [_c('span', [_vm._v("请在下方表格中选择本学期要征订的教材")])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.hadBooked && !_vm.EmptyBook),
+      expression: "  !hadBooked && !EmptyBook"
+    }],
+    staticClass: "SelectBook"
+  }, [_c('div', {
+    staticClass: "table-responsive"
+  }, [_c('table', {
+    staticClass: "table table-hover"
+  }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.bookLists), function(book, index) {
+    return _c('tr', {
+      key: index
+    }, [_c('th', {
+      attrs: {
+        "scope": "row"
+      }
+    }, [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c('th', [_c('a', {
+      attrs: {
+        "href": book.BookAltUrl
+      }
+    }, [_vm._v(_vm._s(book.BookName))])]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookAuthor ? book.BookAuthor : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookIsbn13 ? book.BookIsbn13 : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPublisher ? book.BookPublisher : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPubDate ? book.BookPubDate : '未知'))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookCourse))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.Year + book.Semester))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPrice ? book.BookPrice : '未知'))]), _vm._v(" "), _c('th', [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: (_vm.saveArr),
+        expression: "saveArr"
+      }],
+      attrs: {
+        "type": "checkbox"
+      },
+      domProps: {
+        "value": book,
+        "checked": Array.isArray(_vm.saveArr) ? _vm._i(_vm.saveArr, book) > -1 : (_vm.saveArr)
+      },
+      on: {
+        "__c": function($event) {
+          var $$a = _vm.saveArr,
+            $$el = $event.target,
+            $$c = $$el.checked ? (true) : (false);
+          if (Array.isArray($$a)) {
+            var $$v = book,
+              $$i = _vm._i($$a, $$v);
+            if ($$el.checked) {
+              $$i < 0 && (_vm.saveArr = $$a.concat($$v))
+            } else {
+              $$i > -1 && (_vm.saveArr = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
+            }
+          } else {
+            _vm.saveArr = $$c
+          }
+        }
+      }
+    })])])
+  }))])]), _vm._v(" "), _c('div', {
+    staticClass: "selectAll"
+  }, [_c('input', {
+    attrs: {
+      "type": "checkbox",
+      "id": "checkedAll"
+    },
+    on: {
+      "click": _vm.allChecked
+    }
+  }), _vm._v(" "), _c('label', {
+    attrs: {
+      "for": "checkedAll"
+    }
+  }, [_vm._v("全选")])])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.hadBooked && !_vm.EmptyBook),
+      expression: "!hadBooked && !EmptyBook"
+    }],
+    staticClass: "infoBlock"
+  }, [_c('span', {
+    staticClass: "label label-danger"
+  }, [_vm._v("*注意：确定征订后不可修改")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-block btn-success",
+    attrs: {
+      "type": "button",
+      "id": "butBuy"
+    },
+    on: {
+      "click": _vm.addBooks
+    }
+  }, [_vm._v("\n                确定征订"), _c('span', {
+    staticClass: "glyphicon glyphicon-ok"
+  })])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.SubmitLoading),
+      expression: "SubmitLoading"
+    }],
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "bounce1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce3"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "modal fade bs-example-modal-sm",
+    attrs: {
+      "id": "AlertSmModal",
+      "tabindex": "-1",
+      "role": "dialog",
+      "aria-labelledby": "AlertModalLabel"
+    }
+  }, [_c('div', {
+    staticClass: "modal-dialog modal-sm",
+    attrs: {
+      "role": "document"
+    }
+  }, [_c('div', {
+    staticClass: "modal-content"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "modal-body",
+    staticStyle: {
+      "text-align": "center"
+    }
+  }, [_c('span', {
+    style: (_vm.AlertStyle)
+  }, [_vm._v(_vm._s(_vm.AlertMess))])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("使用课程")]), _vm._v(" "), _c('th', [_vm._v("使用学期")]), _vm._v(" "), _c('th', [_vm._v("参考价格")]), _vm._v(" "), _c('th', [_vm._v("征订")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal-header"
+  }, [_c('button', {
+    staticClass: "close",
+    attrs: {
+      "type": "button",
+      "data-dismiss": "modal",
+      "aria-label": "Close"
+    }
+  }, [_c('span', {
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("×")])]), _vm._v(" "), _c('h5', {
+    staticClass: "modal-title",
+    attrs: {
+      "id": "AlertModalLabel"
+    }
+  }, [_vm._v("提示")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -48451,7 +50355,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.warp[data-v-4b9afa62]{\n    padding-top: 20px;\n    padding-bottom: 250px;\n}\n.userBlock[data-v-4b9afa62]{\n    text-align: center;\n    background-color: #499C94;\n    border: 1px solid #499C94;\n    border-radius: 10px;\n}\n.userInfo[data-v-4b9afa62]{\n    margin-top: 20px;\n}\n.userInfo > span[data-v-4b9afa62]{\n    color: #fafafa;\n    margin-bottom: 20px;\n    display: block;\n}\n.listTile[data-v-4b9afa62]{\n    padding: 10px;\n    height: 40px;\n    text-align: center;\n    background-color: #499C94;\n    color: #fafafa;\n    border: 1px solid #499C94;\n    border-radius: 5px;\n}\n.SelectBook table[data-v-4b9afa62]{\n    margin-top: 10px;\n}\nth[data-v-4b9afa62]{\n    text-align: center;\n}\n@media (min-width: 1400px){\n.container[data-v-4b9afa62] {\n        width: 1350px;\n}\n}\n", ""]);
 
 // exports
 
@@ -48472,8 +50376,151 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            user: {},
+            Year: '',
+            Term: '',
+            QueryData: {},
+            books: []
+        };
+    },
+
+    methods: {
+        getCurrentDate: function getCurrentDate() {
+            var myDate = new Date();
+            var nowYear = myDate.getFullYear() + '年';
+            var nowMonth = myDate.getMonth() + 1;
+            var nowTerm = '';
+            if (nowMonth > 6 && nowMonth < 10) {
+                nowTerm = '第一学期';
+            } else {
+                nowTerm = '第二学期';
+            }
+            this.Year = nowYear;
+            this.Term = nowTerm;
+        },
+        getCurrentBooks: function getCurrentBooks() {
+            var _this = this;
+
+            this.QueryData.year = this.Year;
+            this.QueryData.term = this.Term;
+            this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/getcurrentbooks', this.QueryData).then(function (response) {
+                if (response.data.length === 0) {
+                    console.log('没有书');
+                } else {
+                    _this.books = response.data;
+                    console.log(_this.books);
+                }
+            }, function (response) {
+                console.log('error:' + response.data);
+            });
+        }
+    },
+    mounted: function mounted() {
+        this.user = JSON.parse(document.getElementById('acc').value);
+        console.log(this.user);
+        this.getCurrentDate();
+        this.getCurrentBooks();
+    }
+});
 
 /***/ }),
 /* 60 */
@@ -48481,9 +50528,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "alert"
-  }, [_vm._v("\n    I AM A Dean\n")])
-},staticRenderFns: []}
+    staticClass: "container warp"
+  }, [_c('div', {
+    staticClass: "col-md-3"
+  }, [_c('div', {
+    staticClass: "userBlock"
+  }, [_c('img', {
+    attrs: {
+      "src": "/MaterialsSub/laravel/public/images/tea.png",
+      "alt": ""
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "userInfo"
+  }, [_c('span', [_vm._v("姓名：" + _vm._s(_vm.user.EduMName))]), _vm._v(" "), _c('span', [_vm._v("院系：" + _vm._s(_vm.user.EduMDepartment))]), _vm._v(" "), _c('span', [_vm._v("职位：" + _vm._s(_vm.user.EduMPosition))]), _vm._v(" "), _c('span', [_vm._v("手机：" + _vm._s(_vm.user.EduMPhone))]), _vm._v(" "), _c('span', [_vm._v("邮箱：" + _vm._s(_vm.user.EduMEmail))])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-9"
+  }, [_c('div', {
+    staticClass: "row listTile"
+  }, [_c('div', {
+    staticClass: "col-md-4"
+  }, [_vm._v("院系：" + _vm._s(_vm.user.EduMDepartment))]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4"
+  }, [_vm._v("用材学年：" + _vm._s(_vm.Year))]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4"
+  }, [_vm._v("用材学期：" + _vm._s(_vm.Term))])]), _vm._v(" "), _vm._m(0)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "SelectBook"
+  }, [_c('div', {
+    staticClass: "table-responsive"
+  }, [_c('table', {
+    staticClass: "table table-hover"
+  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("使用课程")]), _vm._v(" "), _c('th', [_vm._v("使用学期")]), _vm._v(" "), _c('th', [_vm._v("参考价格")]), _vm._v(" "), _c('th', [_vm._v("总数量")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")])])])])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

@@ -13,12 +13,12 @@
             </div>
         </div>
         <div class="col-md-9">
-            <div class="alert alert-success" role="alert" v-show="MessageAlert">您已征订本学期教材</div>
+            <div class="alert alert-success" role="alert" v-show="hadBooked">您已征订本学期教材</div>
             <div class="alert alert-warning" role="alert" v-if="EmptyBook">暂无可征订教材</div>
-            <div class="SelectTitle" v-show=" !MessageAlert ">
+            <div class="SelectTitle" v-show=" !hadBooked && !EmptyBook ">
                 <span>请在下方表格中选择本学期要征订的教材</span>
             </div>
-            <div class="SelectBook" v-show=" !MessageAlert ">
+            <div class="SelectBook" v-show="  !hadBooked && !EmptyBook">
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead>
@@ -58,7 +58,7 @@
                     <label for="checkedAll">全选</label>
                 </div>
             </div>
-            <div class="infoBlock" v-show=" !MessageAlert ">
+            <div class="infoBlock" v-show="!hadBooked && !EmptyBook">
                 <span class="label label-danger">*注意：确定征订后不可修改</span>
                 <button type="button" id="butBuy" class="btn btn-block btn-success" @click="addBooks">
                     确定征订<span class="glyphicon glyphicon-ok"></span>
@@ -169,13 +169,16 @@
     export default {
         data(){
             return {
+                Year : '',
+                Term : '',
+                hadBooked : false,
+                postObj : {},
                 EmptyBook : false,
                 user : {},
                 bookLists : [],
                 queryData : {},
                 saveArr : [],
                 SubmitLoading : false,
-                MessageAlert : false,
                 AlertMess : '',
                 AlertStyle : ''
             }
@@ -187,21 +190,15 @@
         },
         methods : {
             getBooks : function () {
-                let myDate = new Date();
-                let nowYear = myDate.getFullYear()+'年';
-                let nowMonth = myDate.getMonth()+1;
-                let nowTerm = '';
-                if(nowMonth>6&&nowMonth<10){
-                    nowTerm = '第一学期';
-                }else{
-                    nowTerm = '第二学期';
-                }
-                this.user.Term = nowYear+''+nowTerm;
-                this.queryData.term = nowTerm;
-                this.queryData.year = nowYear;
+                this.user.Term = this.Year+''+this.Term;
+                this.queryData.term = this.Term;
+                this.queryData.year = this.Year;
                 this.queryData.period = this.user.StuPeriod+''+this.user.StuClass;
                 this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/getbooks',this.queryData).then((response) => {
                     this.bookLists = response.data;
+                    if(this.bookLists.length ===0){
+                        this.EmptyBook = true;
+                    }
                 },(response) => {
                     console.log('error:'+response.data);
                 });
@@ -234,26 +231,63 @@
                         let status = response.data.status;
                         if(status === 'success'){
                             let _this = this;
-                            setTimeout(function () {
-                                _this.AlertStyle = 'color:green';
-                                _this.AlertMess = '征订成功!';
-                                $('#AlertSmModal').modal('show');
-                            },200);
-                            this.MessageAlert = true;
-                            this.SubmitLoading = false;
+                            _this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/hadbooked',this.postObj)
+                                .then((resp) => {
+                                    if(resp.data){
+                                        setTimeout(function () {
+                                            _this.AlertStyle = 'color:green';
+                                            _this.AlertMess = '征订成功!';
+                                            $('#AlertSmModal').modal('show');
+                                        },200);
+                                        _this.SubmitLoading = false;
+                                        _this.hadBooked = true;
+                                    }
+                                },(resp) => {
+                                    console.log('error:'+resp.data);
+                                });
                         }
                     },(response) => {
                         console.log(response.data);
                         this.SubmitLoading = false;
                     });
                 }
+            },
+            checkIfBooked : function () {
+                this.postObj = {
+                    'stuAcc' : this.user.StuAccount,
+                    'hadYear' : this.Year,
+                    'hadSemester' : this.Term
+                };
+                this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/checkifbooked',
+                     this.postObj
+                ).then((response) => {
+                    let bookedNum = response.data[0].HadSubscribe;
+                    this.hadBooked = bookedNum !== '0';
+                },(response) => {
+                    console.log(response.data);
+                });
+            },
+            getCurrentDate : function () {
+                let myDate = new Date();
+                let nowYear = myDate.getFullYear()+'年';
+                let nowMonth = myDate.getMonth()+1;
+                let nowTerm = '';
+                if(nowMonth>6&&nowMonth<10){
+                    nowTerm = '第一学期';
+                }else{
+                    nowTerm = '第二学期';
+                }
+                this.Year = nowYear;
+                this.Term = nowTerm;
             }
 
         },
         mounted(){
             console.log('Student Component mounted.');
+            this.getCurrentDate();
             this.user = JSON.parse(document.getElementById('acc').value);
             console.log(this.user);
+            this.checkIfBooked();
             this.getBooks();
         }
     }

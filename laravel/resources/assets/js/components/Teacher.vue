@@ -578,8 +578,8 @@
             }
         },
         watch :{
-            //网选教材搜索框
-            searchBook : function (val) {
+            //网选教材搜索框 debounce函数用于延迟执行
+            searchBook : _.debounce(function (val) {
                 if(val === ''){
                     this.netBooks.bookListLength = 0;
                 }else{
@@ -587,7 +587,7 @@
                     this.NetBookLoading = true;
                     this.getBooksByApi();
                 }
-            }
+            },500)
         },
         methods : {
             //获取近四年年份

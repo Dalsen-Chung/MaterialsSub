@@ -20,7 +20,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group([
     'prefix'=>'/v1',
     'middleware' => ['api']], function () {
-    Route::any('/user/login',function (){
-        return response()->json(['name' => 'Abigail', 'state' => 'CA']);
-    });
+    Route::any('/getmajor','ApiController@getMajor');
+    Route::any('/uploadimg','ApiController@uploadImg');
+    Route::any('/savebooks','ApiController@saveBooks');
+    Route::any('/searchrecord','ApiController@searchRecord');
+    Route::any('/getbooks','ApiController@getBooks');
+    Route::any('/addamount','ApiController@addAmount');
+    Route::any('/checkifbooked','ApiController@checkIfBooked');
+    Route::any('/hadbooked','ApiController@hadBooked');
+    Route::any('/getcurrentbooks','ApiController@getcurrentbooks');
 });

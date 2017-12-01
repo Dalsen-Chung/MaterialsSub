@@ -4,11 +4,11 @@
     <div class="container">
         <h3 class="text-center"><span class="glyphicon glyphicon-book"></span> 高校教材征订系统</h3>
         <div id="login">
-            <form action="{{ url('/dologin') }}" method="post">
+            <form action="{{ url('/dologin') }}" method="post" role="form">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                 <div class="form-group">
                     <label for="account"><span class="glyphicon glyphicon-user"></span>账号</label>
-                    <input type="text" class="form-control" id="account" name="account" placeholder="学号/教工号">
+                    <input type="text" class="form-control" id="account" name="account" placeholder="学号/教工号" value="{{ old('account') }}">
                 </div>
                 <div class="form-group">
                     <label for="password"><span class="glyphicon glyphicon-lock"></span>密码</label>

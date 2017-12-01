@@ -70,6 +70,7 @@
 <body>
 <div id="app">
     @include('particals.navbar')
+    <input type="hidden" id="acc" value="{{ Session::get('useracc') }}" />
     <Dean></Dean>
     @include('particals.footer')
 </div>
