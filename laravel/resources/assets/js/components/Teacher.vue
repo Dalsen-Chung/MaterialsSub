@@ -25,6 +25,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="spinner" v-show="wordChangeLoading">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
                     <div class="row netbooklists"  v-show="netBooks.bookListLength" >
                             <div class="col-xs-12 col-md-4" v-for="book in netBooks.books" :key="book.id" style="height: 450px;">
                                 <a :href="book.alt" class="thumbnail" target="_blank">
@@ -365,7 +370,7 @@
                                     <th>参考价格</th>
                                 </tr>
                                 </thead>
-                                <tbody name="list" is="transition-group">
+                                <tbody>
                                 <tr v-for="(book,index) in SelectedBooks" :key="index">
                                     <th scope="row">{{ index+1 }}</th>
                                     <th><a v-bind:href="book.BookAltUrl" target="_blank">{{ book.BookName }}</a></th>
@@ -574,7 +579,8 @@
                 SearchLoading : false,
                 SubmitLoading : false,
                 UploadLoading : false,
-                NetBookLoading : false
+                NetBookLoading : false,
+                wordChangeLoading :false
             }
         },
         watch :{
@@ -584,7 +590,7 @@
                     this.netBooks.bookListLength = 0;
                 }else{
                     this.netBooks.nowPage = 1;
-                    this.NetBookLoading = true;
+                    this.wordChangeLoading = true;
                     this.getBooksByApi();
                 }
             },500)
@@ -622,6 +628,7 @@
                         console.log(response.data.books);
                         this.netBooks.bookListLength = response.data.books.length;
                         this.netBooks.books = response.data.books;
+                        this.wordChangeLoading = false;
                         this.NetBookLoading = false;
                 },(response) => {
                     console.log('fail'+response.data);
@@ -670,29 +677,29 @@
 
             //录入网选教材一层事件
             NetSaveOne : function (obj) {
-                this.netBooks.saveTotal.BookName = obj.title;
-                this.netBooks.saveTotal.BookAuthor = obj.author[0];
-                this.netBooks.saveTotal.BookPubDate = obj.pubdate;
-                this.netBooks.saveTotal.BookImage = obj.image;
-                this.netBooks.saveTotal.BookPublisher = obj.publisher;
-                this.netBooks.saveTotal.BookIsbn13 = obj.isbn13;
-                this.netBooks.saveTotal.BookPrice = obj.price;
-                this.netBooks.saveTotal.BookPages = obj.pages;
-                this.netBooks.saveTotal.BookAltUrl = obj.alt;
+                this.netBooks.saveTotal.BookName = obj.title || '未知';
+                this.netBooks.saveTotal.BookAuthor = obj.author[0] || '未知';
+                this.netBooks.saveTotal.BookPubDate = obj.pubdate || '未知';
+                this.netBooks.saveTotal.BookImage = obj.image || '未知';
+                this.netBooks.saveTotal.BookPublisher = obj.publisher || '未知';
+                this.netBooks.saveTotal.BookIsbn13 = obj.isbn13 || '未知';
+                this.netBooks.saveTotal.BookPrice = obj.price || '未知';
+                this.netBooks.saveTotal.BookPages = obj.pages || '未知';
+                this.netBooks.saveTotal.BookAltUrl = obj.alt || '未知';
                 console.log(this.netBooks.saveTotal);
             },
 
             //录入网选教材二层事件
             NetSaveTwo : function (obj) {
-                this.netBooks.saveTotal.BookCourse = obj.NetlessonName;
-                this.netBooks.saveTotal.BookAward = obj.Award;
-                this.netBooks.saveTotal.BookByOwn = obj.ByOwn;
-                this.netBooks.saveTotal.BookWithSun = obj.WithSun;
-                this.netBooks.saveTotal.BookFromAbroad = obj.FromAbroad;
-                this.netBooks.saveTotal.BookForTea = obj.ForTea;
-                this.netBooks.saveTotal.BookToClass = obj.NetMajor;
+                this.netBooks.saveTotal.BookCourse = obj.NetlessonName || '未知';
+                this.netBooks.saveTotal.BookAward = obj.Award || '未知';
+                this.netBooks.saveTotal.BookByOwn = obj.ByOwn || '未知';
+                this.netBooks.saveTotal.BookWithSun = obj.WithSun || '未知';
+                this.netBooks.saveTotal.BookFromAbroad = obj.FromAbroad || '未知';
+                this.netBooks.saveTotal.BookForTea = obj.ForTea || 0;
+                this.netBooks.saveTotal.BookToClass = obj.NetMajor || '未知';
                 this.netBooks.saveTotal.Year = obj.NetYear;
-                this.netBooks.saveTotal.Semester = obj.NetTerm;
+                this.netBooks.saveTotal.Semester = obj.NetTerm || '未知';
                 console.log(this.netBooks.saveTotal);
                 let saveBook = this.netBooks.saveTotal;
                 this.netBooks.saveTotal = {};
@@ -728,22 +735,22 @@
             //保存自填教材
             saveSelfBook : function () {
                 let saveObj = {};
-                saveObj.BookName = this.selfBooks.Name;
-                saveObj.BookAuthor = this.selfBooks.Author;
-                saveObj.BookPubDate = this.selfBooks.PublicDate;
-                saveObj.BookImage = this.selfBooks.Image;
-                saveObj.BookPublisher = this.selfBooks.Publisher;
-                saveObj.BookIsbn13 = this.selfBooks.ISBN13;
-                saveObj.BookPrice = this.selfBooks.Price;
-                saveObj.BookPages = this.selfBooks.Page;
-                saveObj.BookAltUrl = this.selfBooks.AltUrl;
-                saveObj.BookCourse = this.selfBooks.LessonName;
-                saveObj.BookAward = this.selfBooks.Award;
-                saveObj.BookByOwn = this.selfBooks.ByOwn;
-                saveObj.BookWithSun = this.selfBooks.WithSun;
-                saveObj.BookFromAbroad = this.selfBooks.FromAbroad;
-                saveObj.BookForTea = this.selfBooks.ForTea;
-                saveObj.BookToClass = this.selfBooks.Major;
+                saveObj.BookName = this.selfBooks.Name || '未知';
+                saveObj.BookAuthor = this.selfBooks.Author || '未知';
+                saveObj.BookPubDate = this.selfBooks.PublicDate || '未知';
+                saveObj.BookImage = this.selfBooks.Image || '未知';
+                saveObj.BookPublisher = this.selfBooks.Publisher || '未知';
+                saveObj.BookIsbn13 = this.selfBooks.ISBN13 || '未知';
+                saveObj.BookPrice = this.selfBooks.Price || '未知';
+                saveObj.BookPages = this.selfBooks.Page || '未知';
+                saveObj.BookAltUrl = this.selfBooks.AltUrl || '未知';
+                saveObj.BookCourse = this.selfBooks.LessonName || '未知';
+                saveObj.BookAward = this.selfBooks.Award || '未知';
+                saveObj.BookByOwn = this.selfBooks.ByOwn || '未知';
+                saveObj.BookWithSun = this.selfBooks.WithSun || '未知';
+                saveObj.BookFromAbroad = this.selfBooks.FromAbroad || '未知';
+                saveObj.BookForTea = this.selfBooks.ForTea || 0;
+                saveObj.BookToClass = this.selfBooks.Major || '未知';
                 saveObj.Year = this.selfBooks.Year;
                 saveObj.Semester = this.selfBooks.Term;
                 this.selfBooks = {};

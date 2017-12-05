@@ -47852,6 +47852,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -47916,7 +47921,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             SearchLoading: false,
             SubmitLoading: false,
             UploadLoading: false,
-            NetBookLoading: false
+            NetBookLoading: false,
+            wordChangeLoading: false
         };
     },
 
@@ -47927,7 +47933,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 this.netBooks.bookListLength = 0;
             } else {
                 this.netBooks.nowPage = 1;
-                this.NetBookLoading = true;
+                this.wordChangeLoading = true;
                 this.getBooksByApi();
             }
         }, 500)
@@ -47968,6 +47974,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 console.log(response.data.books);
                 _this3.netBooks.bookListLength = response.data.books.length;
                 _this3.netBooks.books = response.data.books;
+                _this3.wordChangeLoading = false;
                 _this3.NetBookLoading = false;
             }, function (response) {
                 console.log('fail' + response.data);
@@ -48016,29 +48023,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         //录入网选教材一层事件
         NetSaveOne: function NetSaveOne(obj) {
-            this.netBooks.saveTotal.BookName = obj.title;
-            this.netBooks.saveTotal.BookAuthor = obj.author[0];
-            this.netBooks.saveTotal.BookPubDate = obj.pubdate;
-            this.netBooks.saveTotal.BookImage = obj.image;
-            this.netBooks.saveTotal.BookPublisher = obj.publisher;
-            this.netBooks.saveTotal.BookIsbn13 = obj.isbn13;
-            this.netBooks.saveTotal.BookPrice = obj.price;
-            this.netBooks.saveTotal.BookPages = obj.pages;
-            this.netBooks.saveTotal.BookAltUrl = obj.alt;
+            this.netBooks.saveTotal.BookName = obj.title || '未知';
+            this.netBooks.saveTotal.BookAuthor = obj.author[0] || '未知';
+            this.netBooks.saveTotal.BookPubDate = obj.pubdate || '未知';
+            this.netBooks.saveTotal.BookImage = obj.image || '未知';
+            this.netBooks.saveTotal.BookPublisher = obj.publisher || '未知';
+            this.netBooks.saveTotal.BookIsbn13 = obj.isbn13 || '未知';
+            this.netBooks.saveTotal.BookPrice = obj.price || '未知';
+            this.netBooks.saveTotal.BookPages = obj.pages || '未知';
+            this.netBooks.saveTotal.BookAltUrl = obj.alt || '未知';
             console.log(this.netBooks.saveTotal);
         },
 
         //录入网选教材二层事件
         NetSaveTwo: function NetSaveTwo(obj) {
-            this.netBooks.saveTotal.BookCourse = obj.NetlessonName;
-            this.netBooks.saveTotal.BookAward = obj.Award;
-            this.netBooks.saveTotal.BookByOwn = obj.ByOwn;
-            this.netBooks.saveTotal.BookWithSun = obj.WithSun;
-            this.netBooks.saveTotal.BookFromAbroad = obj.FromAbroad;
-            this.netBooks.saveTotal.BookForTea = obj.ForTea;
-            this.netBooks.saveTotal.BookToClass = obj.NetMajor;
+            this.netBooks.saveTotal.BookCourse = obj.NetlessonName || '未知';
+            this.netBooks.saveTotal.BookAward = obj.Award || '未知';
+            this.netBooks.saveTotal.BookByOwn = obj.ByOwn || '未知';
+            this.netBooks.saveTotal.BookWithSun = obj.WithSun || '未知';
+            this.netBooks.saveTotal.BookFromAbroad = obj.FromAbroad || '未知';
+            this.netBooks.saveTotal.BookForTea = obj.ForTea || 0;
+            this.netBooks.saveTotal.BookToClass = obj.NetMajor || '未知';
             this.netBooks.saveTotal.Year = obj.NetYear;
-            this.netBooks.saveTotal.Semester = obj.NetTerm;
+            this.netBooks.saveTotal.Semester = obj.NetTerm || '未知';
             console.log(this.netBooks.saveTotal);
             var saveBook = this.netBooks.saveTotal;
             this.netBooks.saveTotal = {};
@@ -48075,22 +48082,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         //保存自填教材
         saveSelfBook: function saveSelfBook() {
             var saveObj = {};
-            saveObj.BookName = this.selfBooks.Name;
-            saveObj.BookAuthor = this.selfBooks.Author;
-            saveObj.BookPubDate = this.selfBooks.PublicDate;
-            saveObj.BookImage = this.selfBooks.Image;
-            saveObj.BookPublisher = this.selfBooks.Publisher;
-            saveObj.BookIsbn13 = this.selfBooks.ISBN13;
-            saveObj.BookPrice = this.selfBooks.Price;
-            saveObj.BookPages = this.selfBooks.Page;
-            saveObj.BookAltUrl = this.selfBooks.AltUrl;
-            saveObj.BookCourse = this.selfBooks.LessonName;
-            saveObj.BookAward = this.selfBooks.Award;
-            saveObj.BookByOwn = this.selfBooks.ByOwn;
-            saveObj.BookWithSun = this.selfBooks.WithSun;
-            saveObj.BookFromAbroad = this.selfBooks.FromAbroad;
-            saveObj.BookForTea = this.selfBooks.ForTea;
-            saveObj.BookToClass = this.selfBooks.Major;
+            saveObj.BookName = this.selfBooks.Name || '未知';
+            saveObj.BookAuthor = this.selfBooks.Author || '未知';
+            saveObj.BookPubDate = this.selfBooks.PublicDate || '未知';
+            saveObj.BookImage = this.selfBooks.Image || '未知';
+            saveObj.BookPublisher = this.selfBooks.Publisher || '未知';
+            saveObj.BookIsbn13 = this.selfBooks.ISBN13 || '未知';
+            saveObj.BookPrice = this.selfBooks.Price || '未知';
+            saveObj.BookPages = this.selfBooks.Page || '未知';
+            saveObj.BookAltUrl = this.selfBooks.AltUrl || '未知';
+            saveObj.BookCourse = this.selfBooks.LessonName || '未知';
+            saveObj.BookAward = this.selfBooks.Award || '未知';
+            saveObj.BookByOwn = this.selfBooks.ByOwn || '未知';
+            saveObj.BookWithSun = this.selfBooks.WithSun || '未知';
+            saveObj.BookFromAbroad = this.selfBooks.FromAbroad || '未知';
+            saveObj.BookForTea = this.selfBooks.ForTea || 0;
+            saveObj.BookToClass = this.selfBooks.Major || '未知';
             saveObj.Year = this.selfBooks.Year;
             saveObj.Semester = this.selfBooks.Term;
             this.selfBooks = {};
@@ -48294,6 +48301,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }), _vm._v(" "), _vm._m(1)])])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.wordChangeLoading),
+      expression: "wordChangeLoading"
+    }],
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "bounce1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce3"
+  })]), _vm._v(" "), _c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -49354,12 +49375,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "table-responsive"
   }, [_c('table', {
     staticClass: "table table-hover"
-  }, [_vm._m(30), _vm._v(" "), _c("transition-group", {
-    tag: "tbody",
-    attrs: {
-      "name": "list"
-    }
-  }, _vm._l((_vm.SelectedBooks), function(book, index) {
+  }, [_vm._m(30), _vm._v(" "), _c('tbody', _vm._l((_vm.SelectedBooks), function(book, index) {
     return _c('tr', {
       key: index
     }, [_c('th', {
@@ -50355,7 +50371,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, "\n.warp[data-v-4b9afa62]{\n    padding-top: 20px;\n    padding-bottom: 250px;\n}\n.userBlock[data-v-4b9afa62]{\n    text-align: center;\n    background-color: #499C94;\n    border: 1px solid #499C94;\n    border-radius: 10px;\n}\n.userInfo[data-v-4b9afa62]{\n    margin-top: 20px;\n}\n.userInfo > span[data-v-4b9afa62]{\n    color: #fafafa;\n    margin-bottom: 20px;\n    display: block;\n}\n.listTile[data-v-4b9afa62]{\n    padding: 10px;\n    height: 40px;\n    text-align: center;\n    background-color: #499C94;\n    color: #fafafa;\n    border: 1px solid #499C94;\n    border-radius: 5px;\n}\n.SelectBook table[data-v-4b9afa62]{\n    margin-top: 10px;\n}\nth[data-v-4b9afa62]{\n    text-align: center;\n}\n@media (min-width: 1400px){\n.container[data-v-4b9afa62] {\n        width: 1350px;\n}\n}\n", ""]);
+exports.push([module.i, "\n.warp[data-v-4b9afa62]{\n    padding-top: 20px;\n    padding-bottom: 250px;\n}\n.userBlock[data-v-4b9afa62]{\n    text-align: center;\n    background-color: #499C94;\n    border: 1px solid #499C94;\n    border-radius: 10px;\n}\n.userInfo[data-v-4b9afa62]{\n    margin-top: 20px;\n}\n.userInfo > span[data-v-4b9afa62]{\n    color: #fafafa;\n    margin-bottom: 20px;\n    display: block;\n}\n.listTile[data-v-4b9afa62]{\n    padding: 10px;\n    height: 40px;\n    text-align: center;\n    background-color: #499C94;\n    color: #fafafa;\n    border: 1px solid #499C94;\n    border-radius: 5px;\n}\n.SelectBook table[data-v-4b9afa62]{\n    margin-top: 10px;\n}\nth[data-v-4b9afa62]{\n    text-align: center;\n}\n.infoBlock[data-v-4b9afa62]{\n    margin-top: 30px;\n    text-align: center;\n}\n.infoBlock button[data-v-4b9afa62]{\n    background-color: #499C94;\n    border-color : #499C94;\n}\n.infoBlock button[data-v-4b9afa62]:hover{\n    box-shadow: 3px 3px 3px #BCBCB7;\n}\n@media (min-width: 1400px){\n.container[data-v-4b9afa62] {\n        width: 1350px;\n}\n}\n", ""]);
 
 // exports
 
@@ -50471,6 +50487,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -50479,7 +50532,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             Year: '',
             Term: '',
             QueryData: {},
-            books: []
+            books: [],
+            outPutLoading: false,
+            AlertStyle: '',
+            AlertMess: ''
         };
     },
 
@@ -50511,6 +50567,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }
             }, function (response) {
                 console.log('error:' + response.data);
+            });
+        },
+        outPutExcel: function outPutExcel() {
+            var _this2 = this;
+
+            this.outPutLoading = true;
+            var postObj = {};
+            var d = new Date();
+            var today = d.getFullYear() + "" + (d.getMonth() + 1) + "" + d.getDate() + "" + d.getHours() + "" + d.getMinutes() + "" + d.getSeconds();
+            postObj.fileName = today + "-" + this.user.EduMDepartment + this.Year + this.Term + '教材汇总表';
+            postObj.data = this.books;
+            this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/excel/export', postObj).then(function (response) {
+                var url = response.data;
+                console.log(url);
+                _this2.outPutLoading = false;
+                window.location.href = url;
+                _this2.AlertMess = '教材导出成功!';
+                _this2.AlertStyle = 'color:green';
+                $('#AlertSmModal').modal('show');
+            }, function (response) {
+                _this2.AlertMess = '错误：' + response.data;
+                _this2.AlertStyle = 'color:red';
+                $('#AlertSmModal').modal('show');
             });
         }
     },
@@ -50550,15 +50629,88 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "col-md-4"
   }, [_vm._v("用材学年：" + _vm._s(_vm.Year))]), _vm._v(" "), _c('div', {
     staticClass: "col-md-4"
-  }, [_vm._v("用材学期：" + _vm._s(_vm.Term))])]), _vm._v(" "), _vm._m(0)])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_vm._v("用材学期：" + _vm._s(_vm.Term))])]), _vm._v(" "), _c('div', {
     staticClass: "SelectBook"
   }, [_c('div', {
     staticClass: "table-responsive"
   }, [_c('table', {
     staticClass: "table table-hover"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("使用课程")]), _vm._v(" "), _c('th', [_vm._v("使用学期")]), _vm._v(" "), _c('th', [_vm._v("参考价格")]), _vm._v(" "), _c('th', [_vm._v("总数量")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")]), _vm._v(" "), _c('th', [_vm._v("1")])])])])])])
+  }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.books), function(book, index) {
+    return _c('tr', {
+      key: index
+    }, [_c('th', [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookName))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookAuthor))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookIsbn13))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPublisher))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPubDate))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookCourse))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookToClass))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.BookPrice))]), _vm._v(" "), _c('th', [_vm._v(_vm._s(book.Amount + '本'))])])
+  }))])])]), _vm._v(" "), _c('div', {
+    staticClass: "infoBlock"
+  }, [_c('button', {
+    staticClass: "btn btn-block btn-success",
+    attrs: {
+      "type": "button",
+      "id": "butBuy"
+    },
+    on: {
+      "click": _vm.outPutExcel
+    }
+  }, [_vm._v("\n                导出为Excel  "), _c('span', {
+    staticClass: "glyphicon glyphicon-download-alt"
+  })]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.outPutLoading),
+      expression: "outPutLoading"
+    }],
+    staticClass: "spinner"
+  }, [_c('div', {
+    staticClass: "bounce1"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce2"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bounce3"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "modal fade bs-example-modal-sm",
+    attrs: {
+      "id": "AlertSmModal",
+      "tabindex": "-1",
+      "role": "dialog",
+      "aria-labelledby": "AlertModalLabel"
+    }
+  }, [_c('div', {
+    staticClass: "modal-dialog modal-sm",
+    attrs: {
+      "role": "document"
+    }
+  }, [_c('div', {
+    staticClass: "modal-content"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "modal-body",
+    staticStyle: {
+      "text-align": "center"
+    }
+  }, [_c('span', {
+    style: (_vm.AlertStyle)
+  }, [_vm._v(_vm._s(_vm.AlertMess))])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("#")]), _vm._v(" "), _c('th', [_vm._v("书名")]), _vm._v(" "), _c('th', [_vm._v("作者")]), _vm._v(" "), _c('th', [_vm._v("ISBN")]), _vm._v(" "), _c('th', [_vm._v("出版社")]), _vm._v(" "), _c('th', [_vm._v("出版日期")]), _vm._v(" "), _c('th', [_vm._v("使用课程")]), _vm._v(" "), _c('th', [_vm._v("发放班级")]), _vm._v(" "), _c('th', [_vm._v("参考价格")]), _vm._v(" "), _c('th', [_vm._v("总数量")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal-header"
+  }, [_c('button', {
+    staticClass: "close",
+    attrs: {
+      "type": "button",
+      "data-dismiss": "modal",
+      "aria-label": "Close"
+    }
+  }, [_c('span', {
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("×")])]), _vm._v(" "), _c('h5', {
+    staticClass: "modal-title",
+    attrs: {
+      "id": "AlertModalLabel"
+    }
+  }, [_vm._v("提示")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

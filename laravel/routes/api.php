@@ -29,4 +29,5 @@ Route::group([
     Route::any('/checkifbooked','ApiController@checkIfBooked');
     Route::any('/hadbooked','ApiController@hadBooked');
     Route::any('/getcurrentbooks','ApiController@getcurrentbooks');
+    Route::any('excel/export','OutPutExcel@ExportExcel');
 });
