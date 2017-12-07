@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="{{ config('system.default_icon') }}">
     <title>{{ config('system.appName') }}</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <style type="text/css">
         html,body{
             margin:0;
@@ -50,7 +51,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            height: 200px;
+            height: 230px;
             background-color: #EEEEEE;
         }
         #footer .content{
@@ -85,11 +86,26 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
             transition: box-shadow 300ms ease-out;
         }
-        #sysIntroduce{
-            /*height: 900px;*/
-        }
         .technology div img:hover{
             box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        }
+        #vue{
+            -webkit-animation-delay: 0.2s;
+            -moz-animation-delay: 0.2s;
+            -o-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+        #mysql{
+            -webkit-animation-delay: 0.6s;
+            -moz-animation-delay: 0.6s;
+            -o-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+        #bootstrap{
+            -webkit-animation-delay: 0.4s;
+            -moz-animation-delay: 0.4s;
+            -o-animation-delay: 0.4s;
+            animation-delay: 0.4s;
         }
         #app{
             min-height:100%;
@@ -98,7 +114,7 @@
             position:relative;
         }
         #main{
-            padding-bottom: 200px;
+            padding-bottom: 250px;
         }
         #login{
             border: 1px solid #C6C9CB;

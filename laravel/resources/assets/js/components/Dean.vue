@@ -1,6 +1,6 @@
 <template>
     <div class="container warp">
-        <div class="col-md-3">
+        <div class="col-md-3 animated fadeInLeft" id="info">
             <div class="userBlock">
                 <img src="/MaterialsSub/laravel/public/images/tea.png" alt="">
                 <div class="userInfo">
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 animated fadeInRight">
             <div class="row listTile">
                 <div class="col-md-4">院系：{{ user.EduMDepartment }}</div>
                 <div class="col-md-4">用材学年：{{ Year }}</div>
@@ -84,7 +84,7 @@
 <style scoped>
     .warp{
         padding-top: 20px;
-        padding-bottom: 250px;
+        padding-bottom: 300px;
     }
 
     .userBlock{
@@ -96,6 +96,13 @@
 
     .userInfo{
         margin-top: 20px;
+    }
+
+    #info{
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        -o-animation-delay: 0.2s;
+        animation-delay: 0.2s;
     }
 
     .userInfo > span{

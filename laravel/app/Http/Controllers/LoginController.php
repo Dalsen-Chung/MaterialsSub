@@ -18,6 +18,7 @@ class LoginController extends Controller
 {
     private $role;
     private $roleModel;
+    private $sys_verify;
 
     public function login(){
         return view('login')->with(['loginErr' => '']);
@@ -27,7 +28,7 @@ class LoginController extends Controller
         $acc = $request->input('account');
         $pass = $request->input('password');
         $user_verify = $request->input('captcha');
-        $sys_verify = session('captcha');
+        $this->sys_verify = session('captcha');
         $this->role = $request->input('role');
 
         $this->validate($request,[
@@ -40,8 +41,8 @@ class LoginController extends Controller
             'captcha.required' => '验证码不能为空值!'
         ]);
 
-        if($user_verify != $sys_verify){
-            return view('login')->with(['loginErr' => '验证码错误']);
+        if($user_verify != $this->sys_verify){
+            return redirect('/login')->withErrors(['loginErr' => '验证码错误']);
         }
 
         switch ($this->role){
@@ -56,10 +57,10 @@ class LoginController extends Controller
                         Session::put('sys_url','/sys/home/student');
                         return \redirect('/sys/home/student');
                     }else{
-                        return view('login',['loginErr'=>'密码错误']);
+                        return redirect('/login')->withErrors(['loginErr'=>'密码错误']);
                     }
                 }else{
-                    return view('login',['loginErr'=>'账号不存在']);
+                    return redirect('/login')->withErrors(['loginErr'=>'账号不存在']);
                 }
                 break;
             case 'Teacher':
@@ -72,10 +73,10 @@ class LoginController extends Controller
                         Session::put('sys_url','/sys/home/teacher');
                         return \redirect('/sys/home/teacher');
                     }else{
-                        return view('login',['loginErr'=>'密码错误']);
+                        return redirect('/login')->withErrors(['loginErr'=>'密码错误']);
                     }
                 }else{
-                    return view('login',['loginErr'=>'账号不存在']);
+                    return redirect('/login')->withErrors(['loginErr'=>'账号不存在']);
                 }
                 break;
             case 'Dean':
@@ -89,10 +90,10 @@ class LoginController extends Controller
                         Session::put('sys_url','/sys/home/dean');
                         return \redirect('/sys/home/dean');
                     }else{
-                        return view('login',['loginErr'=>'密码错误']);
+                        return redirect('/login')->withErrors(['loginErr'=>'密码错误']);
                     }
                 }else{
-                    return view('login',['loginErr'=>'账号不存在']);
+                    return redirect('/login')->withErrors(['loginErr'=>'账号不存在']);
                 }
                 break;
         }
@@ -100,14 +101,14 @@ class LoginController extends Controller
     }
 
     public function add(){
-        $stu = new Dean();
-        $stu->EduMName = '钟教务';
-        $stu->EduMAccount = 'admin';
-        $stu->EduMPassword = '123';
-        $stu->EduMDepartment = '电气与计算机工程学院';
-        $stu->EduMPosition = '教学秘书';
-        $stu->EduMPhone = '15622281569';
-        $stu->EduMEmail = '504471282@qq.com';
+        $stu = new Student();
+        $stu->StuName = '钟教务';
+        $stu->StuAccount = 'admin';
+        $stu->StuPassword = '123';
+        $stu->StuDepartment = '电气与计算机工程学院';
+        $stu->StuPeriod = '2014级';
+        $stu->StuMajorCode = '010202';
+        $stu->StuClass = '计算机信息与科学';
         $stu->save();
     }
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="container content-top">
-            <div class="col-md-3">
+            <div class="col-md-3 animated fadeInLeft">
                 <div class="list-group text-center">
                     <a href="#" class="list-group-item active">菜单栏</a>
                     <a href="#" class="list-group-item" v-on:click="showBlock = 1">网选教材</a>
@@ -31,7 +31,7 @@
                         <div class="bounce3"></div>
                     </div>
                     <div class="row netbooklists"  v-show="netBooks.bookListLength" >
-                            <div class="col-xs-12 col-md-4" v-for="book in netBooks.books" :key="book.id" style="height: 450px;">
+                            <div class="col-xs-12 col-md-4 animated zoomIn" v-for="book in netBooks.books" :key="book.id" style="height: 450px;">
                                 <a :href="book.alt" class="thumbnail" target="_blank">
                                     <img :src="book.image">
                                 </a>
@@ -168,7 +168,7 @@
                 </div>
             </div>
 
-            <div id="formMyself" v-show="showBlock ===2">
+            <div id="formMyself" v-show="showBlock ===2" >
                 <div class="col-md-9 content-plane">
                     <div class="page-header text-center">
                         <h3>自填教材</h3>
@@ -277,7 +277,7 @@
                 </div>
             </div>
 
-            <div id="OldRecord" v-show="showBlock === 3">
+            <div id="OldRecord" v-show="showBlock === 3" >
                 <div class="col-md-9  content-plane">
                     <div class="page-header text-center">
                         <h3>教材记录</h3>
@@ -347,7 +347,7 @@
                 </div>
             </div>
 
-            <div id="NowRecord" v-show="showBlock === 4">
+            <div id="NowRecord" v-show="showBlock === 4" >
                 <div class="col-md-9 content-plane">
                     <div class="page-header text-center">
                         <h3>已录教材</h3>
@@ -425,7 +425,7 @@
     .content-top{
         padding: 0;
         margin-top: 30px;
-        padding-bottom: 250px;
+        padding-bottom: 300px;
     }
     .page-header{
         margin-top: 15px;
@@ -456,7 +456,6 @@
     .select-content{
         margin-bottom: 20px;
     }
-
     /*
         网选教材CSS
     */

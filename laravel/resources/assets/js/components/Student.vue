@@ -1,6 +1,6 @@
 <template>
     <div class="container warp">
-        <div class="col-md-3">
+        <div class="col-md-3 animated bounceInLeft">
             <div class="userBlock">
                 <img src="/MaterialsSub/laravel/public/images/user.png" alt="">
                 <div class="userInfo">
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 animated bounceInRight" id="BockBlock">
             <div class="alert alert-success" role="alert" v-show="hadBooked">您已征订本学期教材</div>
             <div class="alert alert-warning" role="alert" v-if="EmptyBook">暂无可征订教材</div>
             <div class="SelectTitle" v-show=" !hadBooked && !EmptyBook ">
@@ -91,7 +91,7 @@
 <style scoped>
     .warp{
         padding-top: 20px;
-        padding-bottom: 250px;
+        padding-bottom: 300px;
     }
     .userBlock{
         text-align: center;
@@ -99,7 +99,12 @@
         border: 1px solid #14A96F;
         border-radius: 10px;
     }
-
+    #BockBlock{
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        -o-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
     .alert{
         text-align: center;
     }

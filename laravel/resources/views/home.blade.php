@@ -7,7 +7,7 @@
 @section('technology-content')
         <h3 class="text-center">系统开发所用技术</h3>
         <div class="technology clearfix">
-            <div>
+            <div class="animated  bounceInUp">
                 <img src="{{ asset('images/laravel.png') }}" alt="">
                 <div class="Itemtext">
                     <div>
@@ -16,7 +16,7 @@
                     <button type="button" class="btn btn-block btn-laravel" value="1" onclick="jump(this.value)">Laravel</button>
                 </div>
             </div>
-            <div>
+            <div class="animated  bounceInUp" id="vue">
                 <img src="{{ asset('images/vue.png') }}" alt="">
                 <div class="Itemtext">
                     <div>
@@ -25,7 +25,7 @@
                     <button type="button" class="btn btn-block btn-vue" value="2" onclick="jump(this.value)">Vue.js</button>
                 </div>
             </div>
-            <div>
+            <div class="animated  bounceInUp" id="bootstrap">
                 <img src="{{ asset('images/Bootstrap.png') }}" alt="">
                 <div class="Itemtext">
                     <div>
@@ -34,7 +34,7 @@
                     <button type="button" class="btn btn-block btn-boot" value="3" onclick="jump(this.value)">Bootstrap</button>
                 </div>
             </div>
-            <div>
+            <div class="animated  bounceInUp" id="mysql">
                 <img src="{{ asset('images/mysql.png') }}" alt="">
                 <div class="Itemtext">
                     <div>

@@ -18,6 +18,10 @@
                     <span class="glyphicon glyphicon-console" style="font-size: 15px"></span>
                     <span>{{ config('system.technology-stack') }}</span>
                 </div>
+                <div>
+                    <span class="glyphicon glyphicon-cog" style="font-size: 15px"></span>
+                    <span><a href="{{ url('/admin/login-view') }}" target="_blank">后台系统入口</a></span>
+                </div>
             </div>
         </div>
     </div>

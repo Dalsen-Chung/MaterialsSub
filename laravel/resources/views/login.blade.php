@@ -40,7 +40,12 @@
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block center-block">登录</button>
+                <button type="submit" class="btn btn-primary btn-block center-block" onclick="loading()">登录</button>
+                <div class="spinner" id="loginLoading" style="display: none;">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
                 @if(count($errors)>0)
                     <div class="error">
                         @foreach($errors->all() as $error)
@@ -66,6 +71,10 @@
         $url = "{{ url('/captcha/') }}";
         $url = $url + "/" + Math.random();
         document.getElementById('cap').src=$url;
+    }
+
+    function loading(){
+        $('#loginLoading').show();
     }
 </script>
 @endsection

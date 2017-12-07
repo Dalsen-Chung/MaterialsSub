@@ -8,8 +8,10 @@
 require('./bootstrap');
 window.Vue = require('vue');
 
+import animate from 'animate.css'
 import VueResource from 'vue-resource';
 Vue.use(VueResource);
+Vue.use(animate);
 
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
