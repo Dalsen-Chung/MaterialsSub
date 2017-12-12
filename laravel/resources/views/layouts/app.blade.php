@@ -51,7 +51,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            height: 230px;
+            height: 235px;
             background-color: #EEEEEE;
         }
         #footer .content{
@@ -61,8 +61,8 @@
             color: #636B6F;
             margin-bottom: 20px;
         }
-        .main{
-
+        #footer a{
+            text-decoration: none;
         }
         .technology {
             max-width: 1200px;
@@ -89,19 +89,19 @@
         .technology div img:hover{
             box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
         }
-        #vue{
+        #vue,#info_tea{
             -webkit-animation-delay: 0.2s;
             -moz-animation-delay: 0.2s;
             -o-animation-delay: 0.2s;
             animation-delay: 0.2s;
         }
-        #mysql{
+        #mysql,#info_adm{
             -webkit-animation-delay: 0.6s;
             -moz-animation-delay: 0.6s;
             -o-animation-delay: 0.6s;
             animation-delay: 0.6s;
         }
-        #bootstrap{
+        #bootstrap,#info_edu{
             -webkit-animation-delay: 0.4s;
             -moz-animation-delay: 0.4s;
             -o-animation-delay: 0.4s;
@@ -114,7 +114,7 @@
             position:relative;
         }
         #main{
-            padding-bottom: 250px;
+            padding-bottom: 255px;
         }
         #login{
             border: 1px solid #C6C9CB;
@@ -129,6 +129,12 @@
         .error{
             margin-top: 10px;
             text-align: center;
+        }
+        #sysIntroduce .panel-body{
+            text-align: center;
+        }
+        #sysIntroduce .panel-footer>.list-group{
+            margin: 30px;
         }
         @media  only screen and (max-width: 1024px){
             #login{
@@ -160,6 +166,10 @@
             .btn-mysql{
                 background-color: #5287A4;
                 color: #FFFFFF;
+            }
+            #sysIntroduce .panel{
+                width: 80%;
+                margin: 40px auto;
             }
         }
         @media  only screen and (min-width: 1024px){
@@ -204,6 +214,10 @@
             .btn-mysql:hover{
                 background-color: #5287A4;
                 color: #FFFFFF;
+            }
+            #sysIntroduce .panel{
+                width: 60%;
+                margin: 40px auto;
             }
         }
     </style>

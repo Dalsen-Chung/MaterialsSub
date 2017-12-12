@@ -286,11 +286,12 @@
                         <div class="select-content">
                             <label for="RecoYear"><span class="label label-info">请选择学年</span></label>
                             <select id="RecoYear" class="form-control" v-model="BookRecord.Year">
-                                <option>2017年</option>
-                                <option>2016年</option>
-                                <option>2015年</option>
-                                <option>2014年</option>
-                                <option>2013年</option>
+                                <!--<option>2017年</option>-->
+                                <!--<option>2016年</option>-->
+                                <!--<option>2015年</option>-->
+                                <!--<option>2014年</option>-->
+                                <!--<option>2013年</option>-->
+                                <option v-for="(years,key) in dateArr" :key="key">{{ years+'年' }}</option>
                             </select>
                         </div>
                         <div class="select-content">

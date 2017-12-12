@@ -48359,6 +48359,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -49750,7 +49751,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.BookRecord.Year = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
       }
     }
-  }, [_c('option', [_vm._v("2017年")]), _vm._v(" "), _c('option', [_vm._v("2016年")]), _vm._v(" "), _c('option', [_vm._v("2015年")]), _vm._v(" "), _c('option', [_vm._v("2014年")]), _vm._v(" "), _c('option', [_vm._v("2013年")])])]), _vm._v(" "), _c('div', {
+  }, _vm._l((_vm.dateArr), function(years, key) {
+    return _c('option', {
+      key: key
+    }, [_vm._v(_vm._s(years + '年'))])
+  }))]), _vm._v(" "), _c('div', {
     staticClass: "select-content"
   }, [_vm._m(26), _vm._v(" "), _c('select', {
     directives: [{
