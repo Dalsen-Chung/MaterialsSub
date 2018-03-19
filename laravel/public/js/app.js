@@ -51094,25 +51094,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         outPutExcel: function outPutExcel() {
             var _this2 = this;
 
-            this.outPutLoading = true;
-            var postObj = {};
-            var d = new Date();
-            var today = d.getFullYear() + "" + (d.getMonth() + 1) + "" + d.getDate() + "" + d.getHours() + "" + d.getMinutes() + "" + d.getSeconds();
-            postObj.fileName = today + "-" + this.user.EduMDepartment + this.Year + this.Term + '教材汇总表';
-            postObj.data = this.books;
-            this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/excel/export', postObj).then(function (response) {
-                var url = response.data;
-                console.log(url);
-                _this2.outPutLoading = false;
-                window.location.href = url;
-                _this2.AlertMess = '教材导出成功!';
-                _this2.AlertStyle = 'color:green';
+            if (this.books.length > 0) {
+                this.outPutLoading = true;
+                var postObj = {};
+                var d = new Date();
+                var today = d.getFullYear() + "" + (d.getMonth() + 1) + "" + d.getDate() + "" + d.getHours() + "" + d.getMinutes() + "" + d.getSeconds();
+                postObj.fileName = today + "-" + this.user.EduMDepartment + this.Year + this.Term + '教材汇总表';
+                postObj.data = this.books;
+                this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/excel/export', postObj).then(function (response) {
+                    var url = response.data;
+                    console.log(url);
+                    _this2.outPutLoading = false;
+                    window.location.href = url;
+                    _this2.AlertMess = '教材导出成功!';
+                    _this2.AlertStyle = 'color:green';
+                    $('#AlertSmModal').modal('show');
+                }, function (response) {
+                    _this2.AlertMess = '错误：' + response.data;
+                    _this2.AlertStyle = 'color:red';
+                    $('#AlertSmModal').modal('show');
+                });
+            } else {
+                this.AlertMess = '书单为空';
+                this.AlertStyle = 'color:red';
                 $('#AlertSmModal').modal('show');
-            }, function (response) {
-                _this2.AlertMess = '错误：' + response.data;
-                _this2.AlertStyle = 'color:red';
-                $('#AlertSmModal').modal('show');
-            });
+            }
         }
     },
     mounted: function mounted() {

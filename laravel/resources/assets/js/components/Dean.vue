@@ -191,26 +191,32 @@
                     });
             },
             outPutExcel : function () {
-                this.outPutLoading = true;
-                let postObj = {};
-                let d = new Date();
-                let today = d.getFullYear()+""+(d.getMonth()+1)+""+d.getDate()+""+d.getHours()+""+d.getMinutes()+""+d.getSeconds();
-                postObj.fileName =today+"-"+this.user.EduMDepartment + this.Year+this.Term + '教材汇总表';
-                postObj.data = this.books;
-                this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/excel/export',postObj)
-                    .then((response) => {
-                        let url = response.data;
-                        console.log(url);
-                        this.outPutLoading = false;
-                        window.location.href = url;
-                        this.AlertMess = '教材导出成功!';
-                        this.AlertStyle = 'color:green';
-                        $('#AlertSmModal').modal('show');
-                    },(response) => {
-                        this.AlertMess = '错误：'+response.data;
-                        this.AlertStyle = 'color:red';
-                        $('#AlertSmModal').modal('show');
-                    });
+                if (this.books.length > 0){
+                    this.outPutLoading = true;
+                    let postObj = {};
+                    let d = new Date();
+                    let today = d.getFullYear()+""+(d.getMonth()+1)+""+d.getDate()+""+d.getHours()+""+d.getMinutes()+""+d.getSeconds();
+                    postObj.fileName =today+"-"+this.user.EduMDepartment + this.Year+this.Term + '教材汇总表';
+                    postObj.data = this.books;
+                    this.$http.post('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/excel/export',postObj)
+                        .then((response) => {
+                            let url = response.data;
+                            console.log(url);
+                            this.outPutLoading = false;
+                            window.location.href = url;
+                            this.AlertMess = '教材导出成功!';
+                            this.AlertStyle = 'color:green';
+                            $('#AlertSmModal').modal('show');
+                        },(response) => {
+                            this.AlertMess = '错误：'+response.data;
+                            this.AlertStyle = 'color:red';
+                            $('#AlertSmModal').modal('show');
+                        });
+                }else{
+                    this.AlertMess = '书单为空';
+                    this.AlertStyle = 'color:red';
+                    $('#AlertSmModal').modal('show');
+                }
             }
         },
         mounted(){
