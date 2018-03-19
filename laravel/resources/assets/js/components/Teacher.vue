@@ -604,7 +604,7 @@
                 this.netBooks.saveMess.NetYear = nowYear + '年';
                 this.selfBooks.Year = nowYear + '年';
                 let majors = {};
-                for (let i = 0 ; i < 4 ; i++){
+                for (let i = 0 ; i < 5 ; i++){
                     this.dateArr.push(nowYear-i);
                 }
                 this.$http.get('http://localhost/MaterialsSub/laravel/public/index.php/api/v1/getmajor').then((response) => {

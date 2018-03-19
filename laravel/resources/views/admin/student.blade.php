@@ -70,7 +70,7 @@
                 <form action="{{url('/admin/student/add')}}" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <input type="file" name="excel" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
-                    <button type="submit" class="btn btn-primary btn-block">Fetch Data From Excel </button>
+                    <button type="submit" class="btn btn-primary btn-block" id="fetchExcel">Fetch Data From Excel </button>
                     @if(count($errors)>0)
                         <div class="error">
                             @foreach($errors->all() as $error)
