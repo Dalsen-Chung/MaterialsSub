@@ -136,6 +136,9 @@
         #sysIntroduce .panel-footer>.list-group{
             margin: 30px;
         }
+        #sysIntroduce .list-group-item{
+            cursor: pointer;
+        }
         @media  only screen and (max-width: 1024px){
             #login{
                 width: 80%;
