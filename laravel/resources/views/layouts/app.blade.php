@@ -136,9 +136,6 @@
         #sysIntroduce .panel-footer>.list-group{
             margin: 30px;
         }
-        #sysIntroduce .list-group-item{
-            cursor: pointer;
-        }
         @media  only screen and (max-width: 1024px){
             #login{
                 width: 80%;
@@ -237,7 +234,7 @@
         </div>
         @include('particals.footer')
     </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{  asset('js/jquery-3.2.1.js') }}"></script>
     @yield('scripts')
 </body>
 </html>
