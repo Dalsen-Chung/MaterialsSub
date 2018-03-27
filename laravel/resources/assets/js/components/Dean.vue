@@ -113,7 +113,7 @@
 
     .listTile{
         padding: 10px;
-        height: 40px;
+        /*height: 40px;*/
         text-align: center;
         background-color: #499C94;
         color: #fafafa;
@@ -143,6 +143,14 @@
     @media (min-width: 1400px){
         .container {
             width: 1350px;
+        }
+    }
+    @media (max-width: 992px){
+        .col-md-9 {
+            margin-top: 20px;
+        }
+        .SelectBook{
+            margin-top: 10px;
         }
     }
 </style>

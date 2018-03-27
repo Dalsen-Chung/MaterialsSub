@@ -50886,7 +50886,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.warp[data-v-4b9afa62]{\n    padding-top: 20px;\n    padding-bottom: 300px;\n}\n.userBlock[data-v-4b9afa62]{\n    text-align: center;\n    background-color: #499C94;\n    border: 1px solid #499C94;\n    border-radius: 10px;\n}\n.userInfo[data-v-4b9afa62]{\n    margin-top: 20px;\n}\n#info[data-v-4b9afa62]{\n    -webkit-animation-delay: 0.2s;\n    -moz-animation-delay: 0.2s;\n    -o-animation-delay: 0.2s;\n    animation-delay: 0.2s;\n}\n.userInfo > span[data-v-4b9afa62]{\n    color: #fafafa;\n    margin-bottom: 20px;\n    display: block;\n}\n.listTile[data-v-4b9afa62]{\n    padding: 10px;\n    height: 40px;\n    text-align: center;\n    background-color: #499C94;\n    color: #fafafa;\n    border: 1px solid #499C94;\n    border-radius: 5px;\n}\n.SelectBook table[data-v-4b9afa62]{\n    margin-top: 10px;\n}\nth[data-v-4b9afa62]{\n    text-align: center;\n}\n.infoBlock[data-v-4b9afa62]{\n    margin-top: 30px;\n    text-align: center;\n}\n.infoBlock button[data-v-4b9afa62]{\n    background-color: #499C94;\n    border-color : #499C94;\n}\n.infoBlock button[data-v-4b9afa62]:hover{\n    box-shadow: 3px 3px 3px #BCBCB7;\n}\n@media (min-width: 1400px){\n.container[data-v-4b9afa62] {\n        width: 1350px;\n}\n}\n", ""]);
+exports.push([module.i, "\n.warp[data-v-4b9afa62]{\n    padding-top: 20px;\n    padding-bottom: 300px;\n}\n.userBlock[data-v-4b9afa62]{\n    text-align: center;\n    background-color: #499C94;\n    border: 1px solid #499C94;\n    border-radius: 10px;\n}\n.userInfo[data-v-4b9afa62]{\n    margin-top: 20px;\n}\n#info[data-v-4b9afa62]{\n    -webkit-animation-delay: 0.2s;\n    -moz-animation-delay: 0.2s;\n    -o-animation-delay: 0.2s;\n    animation-delay: 0.2s;\n}\n.userInfo > span[data-v-4b9afa62]{\n    color: #fafafa;\n    margin-bottom: 20px;\n    display: block;\n}\n.listTile[data-v-4b9afa62]{\n    padding: 10px;\n    /*height: 40px;*/\n    text-align: center;\n    background-color: #499C94;\n    color: #fafafa;\n    border: 1px solid #499C94;\n    border-radius: 5px;\n}\n.SelectBook table[data-v-4b9afa62]{\n    margin-top: 10px;\n}\nth[data-v-4b9afa62]{\n    text-align: center;\n}\n.infoBlock[data-v-4b9afa62]{\n    margin-top: 30px;\n    text-align: center;\n}\n.infoBlock button[data-v-4b9afa62]{\n    background-color: #499C94;\n    border-color : #499C94;\n}\n.infoBlock button[data-v-4b9afa62]:hover{\n    box-shadow: 3px 3px 3px #BCBCB7;\n}\n@media (min-width: 1400px){\n.container[data-v-4b9afa62] {\n        width: 1350px;\n}\n}\n@media (max-width: 992px){\n.col-md-9[data-v-4b9afa62] {\n        margin-top: 20px;\n}\n.SelectBook[data-v-4b9afa62]{\n        margin-top: 10px;\n}\n}\n", ""]);
 
 // exports
 
@@ -50897,6 +50897,14 @@ exports.push([module.i, "\n.warp[data-v-4b9afa62]{\n    padding-top: 20px;\n    
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
